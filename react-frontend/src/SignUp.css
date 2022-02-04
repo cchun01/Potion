@@ -1,0 +1,148 @@
+.header {
+  position: absolute;
+  width: 80%;
+  height: 100px;
+  left: 10%;
+  top: 5%;
+  background: #96c498;
+  border-radius: 10px;
+
+  font-family: Courier New;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  text-align: center;
+  letter-spacing: 4px;
+  line-height: 100px;
+  color: #000000;
+}
+
+.fieldNameFN {
+  position: absolute;
+  width: 42%;
+  height: 20%;
+  left: 28%;
+  top: 20%;
+  font-family: Courier New;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  color: #000000;
+}
+
+.textboxFN {
+  position: absolute;
+  width: 42%;
+  height: 8%;
+  left: 28%;
+  top: 27%;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Courier New;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.fieldNameE {
+  position: absolute;
+  width: 42%;
+  height: 20%;
+  left: 28%;
+  top: 37%;
+  font-family: Courier New;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  color: #000000;
+}
+
+.textboxE {
+  position: absolute;
+  width: 42%;
+  height: 8%;
+  left: 28%;
+  top: 44%;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Courier New;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.fieldNameU {
+  position: absolute;
+  width: 42%;
+  height: 20%;
+  left: 28%;
+  top: 54%;
+  font-family: Courier New;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  color: #000000;
+}
+
+.textboxU {
+  position: absolute;
+  width: 42%;
+  height: 8%;
+  left: 28%;
+  top: 61%;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Courier New;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.fieldNameP {
+  position: absolute;
+  width: 42%;
+  height: 20%;
+  left: 28%;
+  top: 71%;
+  font-family: Courier New;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  color: #000000;
+}
+
+.textboxP {
+  position: absolute;
+  width: 42%;
+  height: 8%;
+  left: 28%;
+  top: 78%;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Courier New;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.submit {
+  position: absolute;
+  width: 243px;
+  height: 64px;
+  left: 40%;
+  top: 88%;
+
+  background: #96c498;
+  font-family: Courier New;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
