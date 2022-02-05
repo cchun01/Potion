@@ -1,13 +1,20 @@
 import React from "react";
 import "./Home.css";
+import {useNavigate} from "react-router-dom";
 
 function Home() {
+    let navigate = useNavigate();
+
     return (
       <div>
         <div className="header">Potion</div>
         <div className="logo">Logo</div>
-        <div className="signUp">Sign Up</div>
-        <div className="logIn">Log In</div>
+        <button onClick={()=> {navigate("/signup");}} className="signUp">
+        Sign Up
+        </button>
+        <button onClick={()=> {navigate("/login");}} className="logIn">
+          Log In
+        </button>
         <div className="testimonials">Testimonials</div>
         <div className="instructions">How To Get Started</div>
         <div className="about">About Us</div>

@@ -1,0 +1,103 @@
+.header {
+    /* Rectangle 14 */
+
+    position: absolute;
+    width: 1250px;
+    height: 157px;
+    left: 96px;
+    top: 47px;
+    background: #96C498;
+    border-radius: 10px;
+
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 100px;
+    color: #000000;
+}
+
+.fieldnameUser{
+    /* Username: */
+
+    position: absolute;
+    width: 618px;
+    height: 48px;
+    left: 405px;
+    top: 264px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
+}
+
+.textboxUser{
+    /* Rectangle 10 */
+
+    position: absolute;
+    width: 631px;
+    height: 64px;
+    left: 405px;
+    top: 312px;
+
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.fieldnamePW{
+/* Password: */
+
+position: absolute;
+width: 618px;
+height: 48px;
+left: 405px;
+top: 403px;
+
+font-family: 'Courier New', Courier, monospace;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 53px;
+
+color: #000000;
+
+
+}
+
+.textboxPass{
+    /* Rectangle 14 */
+
+    position: absolute;
+    width: 631px;
+    height: 64px;
+    left: 405px;
+    top: 451px;
+
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.submit {
+    position: absolute;
+    width: 243px;
+    height: 64px;
+    left: 40%;
+    top: 88%;
+  
+    background: #96c498;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
