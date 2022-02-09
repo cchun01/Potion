@@ -2,10 +2,10 @@
     /* Rectangle 14 */
 
     position: absolute;
-    width: 550px;
-    height: 107px;
-    left: 396px;
-    top: 47px;
+    width: 40%;
+    height: 100px;
+    left: 29%;
+    top: 5%;
     background: #96C498;
     border-radius: 10px;
 
@@ -24,7 +24,7 @@
     width: 42%;
     height: 20%;
     left: 28%;
-    top: 34%;
+    top: 24%;
     font-family: Courier New;
     font-style: normal;
     font-weight: normal;
@@ -38,7 +38,7 @@
     width: 42%;
     height: 8%;
     left: 28%;
-    top: 41%;
+    top: 31%;
     border: 3px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
@@ -52,7 +52,7 @@
     width: 42%;
     height: 20%;
     left: 28%;
-    top: 51%;
+    top: 41%;
     font-family: Courier New;
     font-style: normal;
     font-weight: normal;
@@ -66,7 +66,7 @@
     width: 42%;
     height: 8%;
     left: 28%;
-    top: 58%;
+    top: 48%;
     border: 3px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
