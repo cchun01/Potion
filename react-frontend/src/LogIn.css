@@ -1,10 +1,10 @@
-.header {
+.headerLog {
     /* Rectangle 14 */
 
     position: absolute;
-    width: 1250px;
-    height: 157px;
-    left: 96px;
+    width: 550px;
+    height: 107px;
+    left: 396px;
     top: 47px;
     background: #96C498;
     border-radius: 10px;
@@ -19,77 +19,68 @@
     color: #000000;
 }
 
-.fieldnameUser{
-    /* Username: */
-
+.fieldNameULog {
     position: absolute;
-    width: 618px;
-    height: 48px;
-    left: 405px;
-    top: 264px;
-
-    font-family: 'Courier New', Courier, monospace;
+    width: 42%;
+    height: 20%;
+    left: 28%;
+    top: 34%;
+    font-family: Courier New;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
     line-height: 53px;
     color: #000000;
-}
-
-.textboxUser{
-    /* Rectangle 10 */
-
+  }
+  
+  .textboxULog {
     position: absolute;
-    width: 631px;
-    height: 64px;
-    left: 405px;
-    top: 312px;
-
+    width: 42%;
+    height: 8%;
+    left: 28%;
+    top: 41%;
     border: 3px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
-}
-
-.fieldnamePW{
-/* Password: */
-
-position: absolute;
-width: 618px;
-height: 48px;
-left: 405px;
-top: 403px;
-
-font-family: 'Courier New', Courier, monospace;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 53px;
-
-color: #000000;
-
-
-}
-
-.textboxPass{
-    /* Rectangle 14 */
-
+    font-family: Courier New;
+    font-style: normal;
+    font-size: 20px;
+  }
+  
+  .fieldNamePLog {
     position: absolute;
-    width: 631px;
-    height: 64px;
-    left: 405px;
-    top: 451px;
-
+    width: 42%;
+    height: 20%;
+    left: 28%;
+    top: 51%;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
+  }
+  
+  .textboxPLog {
+    position: absolute;
+    width: 42%;
+    height: 8%;
+    left: 28%;
+    top: 58%;
     border: 3px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
-}
+    font-family: Courier New;
+    font-style: normal;
+    font-size: 20px;
+  }
 
-.submit {
+.submitLog {
     position: absolute;
     width: 243px;
     height: 64px;
     left: 40%;
-    top: 88%;
+    top: 68%;
   
     background: #96c498;
     font-family: Courier New;

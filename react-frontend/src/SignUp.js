@@ -22,16 +22,16 @@ function clicked() {
 function SignUp() {
   return (
     <div>
-      <div className="header">Sign Up For Potion</div>
-      <div className="fieldNameFN">First Name:</div>
-      <input type="text" className="textboxFN" />
-      <div className="fieldNameE">Email:</div>
-      <input type="text" className="textboxE" />
-      <div className="fieldNameU">Username:</div>
-      <input type="text" className="textboxU" />
-      <div className="fieldNameP">Password:</div>
-      <input type="text" className="textboxP" />
-      <button onClick={clicked} className="submit">
+      <div className="headerSign">Sign Up For Potion</div>
+      <div className="fieldNameFNSign">First Name:</div>
+      <input type="text" className="textboxFNSign" />
+      <div className="fieldNameESign">Email:</div>
+      <input type="text" className="textboxESign" />
+      <div className="fieldNameUSign">Username:</div>
+      <input type="text" className="textboxUSign" />
+      <div className="fieldNamePSign">Password:</div>
+      <input type="text" className="textboxPSign" />
+      <button onClick={clicked} className="submitSign">
         Submit
       </button>
     </div>

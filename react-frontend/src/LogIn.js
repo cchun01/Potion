@@ -16,12 +16,12 @@ function clicked() {
 function LogIn() {
   return (
     <div>
-      <div className="header">Log In</div>
-      <div className="fieldNameU">Username:</div>
-      <input type="text" className="textboxU" />
-      <div className="fieldNameP">Password:</div>
-      <input type="text" className="textboxP" />
-      <button onClick={clicked} className="submit">
+      <div className="headerLog">Log In</div>
+      <div className="fieldNameULog">Username:</div>
+      <input type="text" className="textboxULog" />
+      <div className="fieldNamePLog">Password:</div>
+      <input type="text" className="textboxPLog" />
+      <button onClick={clicked} className="submitLog">
         Submit
       </button>
     </div>
