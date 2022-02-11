@@ -22,7 +22,7 @@ function clicked() {
 function SignUp() {
   return (
     <div>
-      <div className="header">Sign Up For Potion</div>
+      <div className="headerSU">Sign Up For Potion</div>
       <div className="fieldNameFN">First Name:</div>
       <input type="text" className="textboxFN" />
       <div className="fieldNameE">Email:</div>
