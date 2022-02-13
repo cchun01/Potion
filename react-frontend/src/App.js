@@ -4,7 +4,6 @@ import LogIn from './LogIn';
 import Home from './Home';
 import AboutUs from './AboutUs';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import styled from "styled-components";
 
 const linkStyle = {
   margin: "1rem",

@@ -3,7 +3,7 @@ import './AboutUs.css';
 function AboutUs() {
     return (
       <div>
-        <div className="header">About Us</div>
+        <div className="headerAbout">About Us</div>
         <div className="pinkblock">
             Potion is designed and created by four Cal Poly students in CSC 307.
             Through learning and applying our skills around software engineering,
