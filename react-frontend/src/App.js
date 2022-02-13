@@ -3,6 +3,7 @@ import SignUp from './SignUp'
 import LogIn from './LogIn';
 import Home from './Home';
 import AboutUs from './AboutUs';
+import EmailVerification from './EmailVerification';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 const linkStyle = {
@@ -22,6 +23,7 @@ function MyApp() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/emailverification" element={<EmailVerification />} />
         </Routes>
       </Router>
     );  

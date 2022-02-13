@@ -1,5 +1,6 @@
 import React from "react";
 import "./SignUp.css";
+import {useNavigate} from "react-router-dom";
 
 function clicked() {
   const firstName = document.getElementsByClassName("textboxFNSign")[0].value;
@@ -20,6 +21,7 @@ function clicked() {
 }
 
 function SignUp() {
+  let navigate = useNavigate();
   return (
     <div>
       <div className="headerSU">Sign Up For Potion</div>
@@ -31,7 +33,7 @@ function SignUp() {
       <input type="text" className="textboxUSign" />
       <div className="fieldNamePSign">Password:</div>
       <input type="text" className="textboxPSign" />
-      <button onClick={clicked} className="submitSign">
+      <button onClick={()=> {navigate("/EmailVerification");}} className="submitSign">
         Submit
       </button>
     </div>
