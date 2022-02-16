@@ -44,6 +44,7 @@ function SignUp() {
       <input type="text" className="textboxPSign" />
       <button
         onClick={() => {
+          clicked();
           navigate("/EmailVerification");
         }}
         className="submitSign"

@@ -21,25 +21,25 @@ function AboutUs() {
         <div className="row">
           <div class="column">
             <figure>
-              <img src={require("./rachel.png")} />
+              <img alt="rachel" src={require("./rachel.png")} />
               <figcaption>Rachel</figcaption>
             </figure>
           </div>
           <div class="column">
             <figure>
-              <img src={require("./dani.JPEG")} />
+              <img alt="dani" src={require("./dani.JPEG")} />
               <figcaption>Dani</figcaption>
             </figure>
           </div>
           <div class="column">
             <figure>
-              <img src={require("./alexa.JPG")} />
+              <img alt="alexa" src={require("./alexa.JPG")} />
               <figcaption>Alexa</figcaption>
             </figure>
           </div>
           <div class="column">
             <figure>
-              <img src={require("./colin.jpeg")} />
+              <img alt="colin" src={require("./colin.jpeg")} />
               <figcaption>Colin</figcaption>
             </figure>
           </div>

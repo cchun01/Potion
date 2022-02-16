@@ -5,7 +5,7 @@ import "./LoadingScreen.css";
 function LoadingScreen() {
   return (
     <div>
-      <img src={require("./logo.jpg")} />
+      <img alt="logo" src={require("./logo.jpg")} />
       <Typist className="loading-text">Potion Brewing...</Typist>
     </div>
   );
