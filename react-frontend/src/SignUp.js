@@ -1,13 +1,13 @@
 import React from "react";
 import "./SignUp.css";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function clicked() {
   const firstName = document.getElementsByClassName("textboxFNSign")[0].value;
   const email = document.getElementsByClassName("textboxESign")[0].value;
   const username = document.getElementsByClassName("textboxUSign")[0].value;
   const password = document.getElementsByClassName("textboxPSign")[0].value;
-  if(firstName === ""){
+  if (firstName === "") {
     console.log("No first name provided");
   } else if (email === "") {
     console.log("No email provided");
@@ -42,7 +42,12 @@ function SignUp() {
       <input type="text" className="textboxUSign" />
       <div className="fieldNamePSign">Password:</div>
       <input type="text" className="textboxPSign" />
-      <button onClick={()=> {navigate("/EmailVerification");}} className="submitSign">
+      <button
+        onClick={() => {
+          navigate("/EmailVerification");
+        }}
+        className="submitSign"
+      >
         Submit
       </button>
     </div>
