@@ -6,16 +6,25 @@ function clicked() {
   const email = document.getElementsByClassName("textboxE")[0].value;
   const username = document.getElementsByClassName("textboxU")[0].value;
   const password = document.getElementsByClassName("textboxP")[0].value;
-  if(firstName === ""){
+  if (firstName === "") {
     console.log("No first name provided");
-  }else if(email === ""){
+  } else if (email === "") {
     console.log("No email provided");
-  }else if(username === ""){
+  } else if (username === "") {
     console.log("No username provided");
-  }else if(password === ""){
+  } else if (password === "") {
     console.log("No password provided");
-  }else{
-    console.log("Profile\n\nFirst Name: " + firstName +"\nEmail: " + email + "\nUseranme: " + username + "\nPassword: " + password);
+  } else {
+    console.log(
+      "Profile\n\nFirst Name: " +
+        firstName +
+        "\nEmail: " +
+        email +
+        "\nUseranme: " +
+        username +
+        "\nPassword: " +
+        password
+    );
   }
 }
 

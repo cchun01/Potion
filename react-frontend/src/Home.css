@@ -1,190 +1,190 @@
 .header {
-/* Potion */
+  /* Potion */
 
-    position: absolute;
-    width: 403px;
-    height: 151px;
-    left: 452px;
-    top: 31px;
+  position: absolute;
+  width: 403px;
+  height: 151px;
+  left: 452px;
+  top: 31px;
 
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 84px;
-    line-height: 111px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 84px;
+  line-height: 111px;
 
-    color: #000000;
+  color: #000000;
 }
 
 .logo {
-    /* Rectangle 1 */
+  /* Rectangle 1 */
 
-    position: absolute;
-    width: 337px;
-    height: 182px;
-    left: 110px;
-    top: 49px;
+  position: absolute;
+  width: 337px;
+  height: 182px;
+  left: 110px;
+  top: 49px;
 
-    background: #96C498;
+  background: #96c498;
 
-    /* Logo */
+  /* Logo */
 
-    position: absolute;
-    width: 264px;
-    height: 104px;
-    left: 48px;
-    top: 88px;
+  position: absolute;
+  width: 264px;
+  height: 104px;
+  left: 48px;
+  top: 88px;
 
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 84px;
-    line-height: 111px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 84px;
+  line-height: 111px;
 
-    color: #000000;
+  color: #000000;
 }
 
 .signUp {
-    /* Rectangle 10 */
+  /* Rectangle 10 */
 
-    position: absolute;
-    width: 182px;
-    height: 116px;
-    left: 860px;
-    top: 0px;
+  position: absolute;
+  width: 182px;
+  height: 116px;
+  left: 860px;
+  top: 0px;
 
-    background: #96C498;
+  background: #96c498;
 
-    /* Sign Up */
+  /* Sign Up */
 
-    position: absolute;
-    width: 162px;
-    height: 61px;
-    left: 880px;
-    top: 27px;
+  position: absolute;
+  width: 162px;
+  height: 61px;
+  left: 880px;
+  top: 27px;
 
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 48px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 48px;
 
-    color: #000000;
+  color: #000000;
 }
 
 .logIn {
-    /* Rectangle 3 */
+  /* Rectangle 3 */
 
-    position: absolute;
-    width: 182px;
-    height: 116px;
-    left: 1054px;
-    top: 0px;
+  position: absolute;
+  width: 182px;
+  height: 116px;
+  left: 1054px;
+  top: 0px;
 
-    background: #96C498;
+  background: #96c498;
 
-    /* Group 1 */
-    position: absolute;
-    width: 139px;
-    height: 61px;
-    left: 1078px;
-    top: 27px;
+  /* Group 1 */
+  position: absolute;
+  width: 139px;
+  height: 61px;
+  left: 1078px;
+  top: 27px;
 
-    /* Log in */
-    position: absolute;
-    width: 139px;
-    height: 61px;
-    left: 1078px;
-    top: 27px;
+  /* Log in */
+  position: absolute;
+  width: 139px;
+  height: 61px;
+  left: 1078px;
+  top: 27px;
 
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 48px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
 
-    color: #000000;
+  color: #000000;
 }
 
-.about{
-    /* Rectangle 9 */
+.about {
+  /* Rectangle 9 */
 
-    position: absolute;
-    width: 189px;
-    height: 116px;
-    left: 1153px;
-    top: 0px;
+  position: absolute;
+  width: 189px;
+  height: 116px;
+  left: 1153px;
+  top: 0px;
 
-    background: #96C498;
+  background: #96c498;
 
-    /* About Us */
-    position: absolute;
-    width: 172px;
-    height: 61px;
-    left: 1240px;
-    top: 27px;
+  /* About Us */
+  position: absolute;
+  width: 172px;
+  height: 61px;
+  left: 1240px;
+  top: 27px;
 
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 64px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 64px;
 
-    color: #000000;
+  color: #000000;
 }
 
-.testimonials{
-    /* Rectangle 7 */
+.testimonials {
+  /* Rectangle 7 */
 
-    position: absolute;
-    width: 337px;
-    height: 546px;
-    left: 0px;
-    top: 355px;
+  position: absolute;
+  width: 337px;
+  height: 546px;
+  left: 0px;
+  top: 355px;
 
-    background: #96C498;
+  background: #96c498;
 
-    /* Testimonials */
+  /* Testimonials */
 
-    position: absolute;
-    width: 292px;
-    height: 73px;
-    left: 50px;
-    top: 397px;
+  position: absolute;
+  width: 292px;
+  height: 73px;
+  left: 50px;
+  top: 397px;
 
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 48px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 48px;
 
-    color: #000000;
+  color: #000000;
 }
 
-.instructions{
-    /* Rectangle 8 */
+.instructions {
+  /* Rectangle 8 */
 
-    position: absolute;
-    width: 345px;
-    height: 600px;
-    left: 1097px;
-    top: 351px;
+  position: absolute;
+  width: 345px;
+  height: 600px;
+  left: 1097px;
+  top: 351px;
 
-    background: #96C498;
+  background: #96c498;
 
-    /* How To Get Started */
+  /* How To Get Started */
 
-    position: absolute;
-    width: 339px;
-    height: 69px;
-    left: 1073px;
-    top: 381px;
+  position: absolute;
+  width: 339px;
+  height: 69px;
+  left: 1073px;
+  top: 381px;
 
-    font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 37px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 37px;
 
-    color: #000000;
+  color: #000000;
 }
