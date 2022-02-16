@@ -9,14 +9,23 @@ function clicked() {
   const password = document.getElementsByClassName("textboxPSign")[0].value;
   if(firstName === ""){
     console.log("No first name provided");
-  }else if(email === ""){
+  } else if (email === "") {
     console.log("No email provided");
-  }else if(username === ""){
+  } else if (username === "") {
     console.log("No username provided");
-  }else if(password === ""){
+  } else if (password === "") {
     console.log("No password provided");
-  }else{
-    console.log("Profile\n\nFirst Name: " + firstName +"\nEmail: " + email + "\nUseranme: " + username + "\nPassword: " + password);
+  } else {
+    console.log(
+      "Profile\n\nFirst Name: " +
+        firstName +
+        "\nEmail: " +
+        email +
+        "\nUseranme: " +
+        username +
+        "\nPassword: " +
+        password
+    );
   }
 }
 

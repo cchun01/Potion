@@ -27,7 +27,7 @@
   margin: 50px;
 }
 
-.listName{
+.listName {
   width: 200px;
   height: auto;
   display: flex;
@@ -38,7 +38,7 @@
   border-left: 200px;
 }
 
-.plusText{
+.plusText {
   font-family: Courier New;
   font-style: normal;
   font-weight: bold;
@@ -48,7 +48,7 @@
   flex-direction: row;
 }
 
-.plusText2{
+.plusText2 {
   font-family: Courier New;
   font-style: normal;
   font-weight: bold;
@@ -58,7 +58,7 @@
   flex-direction: row;
 }
 
-.test{
+.test {
   width: 65%;
   border-radius: 50%;
   width: 200px;
@@ -78,12 +78,12 @@
   display: table;
 }
 
-.allOptions{
+.allOptions {
   padding: 10%;
   padding-top: 20%;
 }
 
-figcaption{
+figcaption {
   text-align: center;
   width: 75%;
   font-size: 30px;
