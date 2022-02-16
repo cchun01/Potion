@@ -1,4 +1,4 @@
-.header {
+.headerLog {
   /* Rectangle 14 */
 
   position: absolute;
@@ -19,7 +19,7 @@
   color: #000000;
 }
 
-.fieldnameUser {
+.fieldNameULog {
   /* Username: */
 
   position: absolute;
@@ -36,7 +36,7 @@
   color: #000000;
 }
 
-.textboxUser {
+.textboxULog {
   /* Rectangle 10 */
 
   position: absolute;
@@ -50,7 +50,7 @@
   border-radius: 10px;
 }
 
-.fieldnamePW {
+.fieldNamePLog {
   /* Password: */
 
   position: absolute;
@@ -68,7 +68,7 @@
   color: #000000;
 }
 
-.textboxPass {
+.textboxPLog {
   /* Rectangle 14 */
 
   position: absolute;
@@ -82,7 +82,7 @@
   border-radius: 10px;
 }
 
-.submit {
+.submitLog {
   position: absolute;
   width: 243px;
   height: 64px;
