@@ -4,11 +4,11 @@ import "./LogIn.css";
 function clicked() {
   const username = document.getElementsByClassName("textboxU")[0].value;
   const password = document.getElementsByClassName("textboxP")[0].value;
-  if(username === ""){
+  if (username === "") {
     console.log("No username provided");
-  }else if(password === ""){
+  } else if (password === "") {
     console.log("No password provided");
-  }else{
+  } else {
     console.log("Profile\n\nUseranme: " + username + "\nPassword: " + password);
   }
 }
