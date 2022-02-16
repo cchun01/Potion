@@ -17,7 +17,7 @@
   color: #000000;
 }
 
-.fieldNameFN {
+.fieldNameFNSign {
   position: absolute;
   width: 42%;
   height: 20%;
@@ -31,7 +31,7 @@
   color: #000000;
 }
 
-.textboxFN {
+.textboxFNSign {
   position: absolute;
   width: 42%;
   height: 8%;
@@ -45,7 +45,7 @@
   font-size: 20px;
 }
 
-.fieldNameE {
+.fieldNameESign {
   position: absolute;
   width: 42%;
   height: 20%;
@@ -59,7 +59,7 @@
   color: #000000;
 }
 
-.textboxE {
+.textboxESign {
   position: absolute;
   width: 42%;
   height: 8%;
@@ -73,7 +73,7 @@
   font-size: 20px;
 }
 
-.fieldNameU {
+.fieldNameUSign {
   position: absolute;
   width: 42%;
   height: 20%;
@@ -87,7 +87,7 @@
   color: #000000;
 }
 
-.textboxU {
+.textboxUSign {
   position: absolute;
   width: 42%;
   height: 8%;
@@ -101,7 +101,7 @@
   font-size: 20px;
 }
 
-.fieldNameP {
+.fieldNamePSign {
   position: absolute;
   width: 42%;
   height: 20%;
@@ -115,7 +115,7 @@
   color: #000000;
 }
 
-.textboxP {
+.textboxPSign {
   position: absolute;
   width: 42%;
   height: 8%;
@@ -129,7 +129,7 @@
   font-size: 20px;
 }
 
-.submit {
+.submitSign {
   position: absolute;
   width: 243px;
   height: 64px;

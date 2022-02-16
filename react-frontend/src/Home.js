@@ -27,7 +27,14 @@ function Home() {
       </button>
       <div className="testimonials">Testimonials</div>
       <div className="instructions">How To Get Started</div>
-      <div className="about">About Us</div>
+      <button
+        onClick={() => {
+          navigate("/aboutus");
+        }}
+        className="about"
+      >
+        About Us
+      </button>
     </div>
   );
 }
