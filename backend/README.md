@@ -1,6 +1,6 @@
 Instructions for running backend!
 
-* make sure you are in the backend directory
+* make sure you are in the backend directory and add what I sent in the group chat to a .env file
 * install packages with `npm install`
     * if that doesn't work basically you need to install `npm i --save-dev nodemon` and `npm i mongoose` and `npm i express`
 * then run `npm run dev`
