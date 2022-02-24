@@ -1,190 +1,171 @@
-.header {
-  /* Potion */
-
-  position: absolute;
-  width: 403px;
-  height: 151px;
-  left: 452px;
-  top: 31px;
-
-  font-family: "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 84px;
-  line-height: 111px;
-
-  color: #000000;
+.home {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1334px;
+  width: 1440px;
 }
 
-.logo {
-  /* Rectangle 1 */
-
+.text-9 {
+  align-items: flex-start;
+  display: flex;
+  height: 48px;
+  left: 190px;
+  min-width: 325px;
   position: absolute;
-  width: 337px;
-  height: 182px;
-  left: 110px;
-  top: 49px;
-
-  background: #96c498;
-
-  /* Logo */
-
-  position: absolute;
-  width: 264px;
-  height: 104px;
-  left: 48px;
-  top: 88px;
-
-  font-family: "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 84px;
-  line-height: 111px;
-
-  color: #000000;
+  top: 61px;
 }
 
-.signUp {
-  /* Rectangle 10 */
-
-  position: absolute;
-  width: 182px;
-  height: 116px;
-  left: 860px;
-  top: 0px;
-
-  background: #96c498;
-
-  /* Sign Up */
-
-  position: absolute;
-  width: 162px;
-  height: 61px;
-  left: 880px;
-  top: 27px;
-
-  font-family: "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 48px;
-
-  color: #000000;
+.potion-5 {
+  letter-spacing: 0;
+  min-height: 24px;
+  min-width: 70px;
 }
 
-.logIn {
-  /* Rectangle 3 */
-
-  position: absolute;
-  width: 182px;
-  height: 116px;
-  left: 1054px;
-  top: 0px;
-
-  background: #96c498;
-
-  /* Group 1 */
-  position: absolute;
-  width: 139px;
-  height: 61px;
-  left: 1078px;
-  top: 27px;
-
-  /* Log in */
-  position: absolute;
-  width: 139px;
-  height: 61px;
-  left: 1078px;
-  top: 27px;
-
-  font-family: "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 48px;
-
-  color: #000000;
+.about-us-5 {
+  cursor: pointer;
+  letter-spacing: 0;
+  margin-left: 49px;
+  min-height: 24px;
+  min-width: 95px;
 }
 
-.about {
-  /* Rectangle 9 */
-
-  position: absolute;
-  width: 189px;
-  height: 116px;
-  left: 1153px;
-  top: 0px;
-
-  background: #96c498;
-
-  /* About Us */
-  position: absolute;
-  width: 172px;
-  height: 61px;
-  left: 1240px;
-  top: 27px;
-
-  font-family: "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 64px;
-
-  color: #000000;
+.help-5 {
+  cursor: pointer;
+  letter-spacing: 0;
+  margin-left: 57px;
+  min-height: 48px;
 }
 
-.testimonials {
-  /* Rectangle 7 */
-
+.image-1-6 {
+  height: 77px;
+  left: 99px;
+  object-fit: cover;
   position: absolute;
-  width: 337px;
-  height: 546px;
-  left: 0px;
-  top: 355px;
-
-  background: #96c498;
-
-  /* Testimonials */
-
-  position: absolute;
-  width: 292px;
-  height: 73px;
-  left: 50px;
-  top: 397px;
-
-  font-family: "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 48px;
-
-  color: #000000;
+  top: 23px;
+  width: 81px;
 }
 
-.instructions {
-  /* Rectangle 8 */
-
+.line-2-1 {
+  height: 1px;
+  left: 99px;
   position: absolute;
-  width: 345px;
-  height: 600px;
-  left: 1097px;
-  top: 351px;
-
-  background: #96c498;
-
-  /* How To Get Started */
-
-  position: absolute;
-  width: 339px;
-  height: 69px;
-  left: 1073px;
-  top: 381px;
-
-  font-family: "Courier New", Courier, monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 37px;
-
-  color: #000000;
+  top: 104px;
+  width: 1239px;
 }
+
+.line-1-1 {
+  height: 36px;
+  left: 1144px;
+  position: absolute;
+  top: 56px;
+  width: 1px;
+}
+
+.overlap-group2-4 {
+  height: 469px;
+  margin-left: 55.0px;
+  margin-top: 169px;
+  position: relative;
+  width: 1217px;
+  z-index: 2;
+}
+
+.overlap-group1-3 {
+  height: 469px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1217px;
+}
+
+.image-27 {
+  height: 469px;
+  left: 510px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 707px;
+}
+
+.true-minimalism-meets-productivity {
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 83px;
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.text-10 {
+  align-items: center;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  left: 31px;
+  position: absolute;
+  top: 234px;
+  width: 465px;
+}
+
+.where-things-get-don {
+  height: 24px;
+  letter-spacing: 0;
+  margin-left: -2px;
+  width: 463px;
+  color: var(--envy);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.line-3-3 {
+  height: 1px;
+  margin-right: 1.0px;
+  margin-top: 572px;
+  width: 1239px;
+  z-index: 3;
+}
+
+.flex-row-4 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 35.0px;
+  margin-top: 22px;
+  min-width: 1237px;
+  z-index: 1;
+}
+
+.image-2 {
+  height: 22px;
+  margin-top: 3px;
+  object-fit: cover;
+  width: 22px;
+}
+
+.address-5 {
+  align-self: center;
+  letter-spacing: 0;
+  margin-bottom: 2.0px;
+  margin-left: 6px;
+  min-height: 25px;
+  width: 143px;
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.image-3 {
+  height: 41px;
+  margin-left: 834px;
+  object-fit: cover;
+  width: 232px;
+}
+

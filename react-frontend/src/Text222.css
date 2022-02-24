@@ -1,0 +1,17 @@
+.text-2 {
+  display: flex;
+  height: 61px;
+  width: 187px;
+}
+
+.sign-in-1 {
+  flex: 1;
+  letter-spacing: 0;
+  width: 185px;
+  font-size: 50px;
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-style: normal;
+  font-weight: 800;
+}
+

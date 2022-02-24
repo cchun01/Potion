@@ -1,13 +1,14 @@
 import React from "react";
 import SignUp from "./SignUp";
-import LogIn from "./LogIn";
-import Home from "./Home";
 import AboutUs from "./AboutUs";
 import EmailVerification from "./EmailVerification";
+import MyNotes from "./MyNotes";
+import LogIn from "./LogIn";
+import Home from "./Home";
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const linkStyle = {
-  margin: "1rem",
   textDecoration: "none",
   color: "green",
 };
@@ -16,17 +17,45 @@ function MyApp() {
   return (
     <Router>
       <nav>
-        <Link to="/" style={linkStyle}>
-          {" "}
-          Home{" "}
-        </Link>
+        <div className="overlap-group4">
+          <div className="nav-bar">
+            <Link to="/" className="align-self-flex-center" style={linkStyle}>
+              <img className="image-1-1" src={require("./navbarImages/image-1@2x.png")} />
+            </Link>
+            <div className="text">
+              <Link to="/" style={linkStyle}>
+                <div className="potion">
+                  <span className="montserrat-bold-envy-20px">{"Potion"}</span>
+                  <span className="montserrat-medium-envy-20px">{""}</span>
+                </div>
+              </Link>
+              <Link to="/about-us" style={linkStyle}>
+                <div className="about-us">{"About Us"}</div>
+              </Link>
+              <Link to="/help" style={linkStyle}>
+                <div className="help">{"Help"}</div>
+              </Link>
+            </div>
+            <div className="text-1">
+              <Link to="/log-in" style={linkStyle}>
+                <div className="log-in-1">{"Log In"}</div>
+              </Link>
+              <Link to="/try-notion-free" style={linkStyle}>
+                <div className="try-potion-free">{"Try Potion Free"}</div>
+              </Link>
+            </div>
+          </div>
+          <img className="line-1" src={require("./navbarImages/line-1@2x.png")} />
+          <img className="line-2" src={require("./navbarImages/line-3@1x.png")} />
+        </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<LogIn />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/emailverification" element={<EmailVerification />} />
+        <Route path="/mynotes" element={<MyNotes />} />
+        <Route path="/log-in" element={<LogIn />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   );
