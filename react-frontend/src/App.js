@@ -20,7 +20,11 @@ function MyApp() {
         <div className="overlap-group4">
           <div className="nav-bar">
             <Link to="/" className="align-self-flex-center" style={linkStyle}>
-              <img className="image-1-1" src={require("./navbarImages/image-1@2x.png")} />
+              <img
+                className="image-1-1"
+                alt=""
+                src={require("./navbarImages/image-1@2x.png")}
+              />
             </Link>
             <div className="text">
               <Link to="/" style={linkStyle}>
@@ -45,8 +49,16 @@ function MyApp() {
               </Link>
             </div>
           </div>
-          <img className="line-1" src={require("./navbarImages/line-1@2x.png")} />
-          <img className="line-2" src={require("./navbarImages/line-3@1x.png")} />
+          <img
+            className="line-1"
+            alt=""
+            src={require("./navbarImages/line-1@2x.png")}
+          />
+          <img
+            className="line-2"
+            alt=""
+            src={require("./navbarImages/line-3@1x.png")}
+          />
         </div>
       </nav>
       <Routes>
