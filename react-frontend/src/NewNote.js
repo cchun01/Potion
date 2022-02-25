@@ -1,79 +1,79 @@
 import "./NewNote.css";
-import React from 'react';
-import { Textarea } from "@chakra-ui/textarea"
-import { Text } from '@chakra-ui/react'
+import React from "react";
+import { Textarea } from "@chakra-ui/textarea";
+import { Text } from "@chakra-ui/react";
 
 function NoteTitle() {
-  let [value, setValue] = React.useState('')
+  let [value, setValue] = React.useState("");
 
   let handleInputChange = (e) => {
-    let inputValue = e.target.value
-    setValue(inputValue)
-  }
+    let inputValue = e.target.value;
+    setValue(inputValue);
+  };
   return (
     <>
-      <Text mb='8px'>{value}</Text>
-      <Textarea 
+      <Text mb="8px">{value}</Text>
+      <Textarea
         value={value}
         onChange={handleInputChange}
-        placeholder='Untitled Note'
-        size='sm'
+        placeholder="Untitled Note"
+        size="sm"
       />
     </>
-  )
+  );
 }
 
 function NoteSubheader() {
-  let [value, setValue] = React.useState('')
+  let [value, setValue] = React.useState("");
 
   let handleInputChange = (e) => {
-    let inputValue = e.target.value
-    setValue(inputValue)
-  }
+    let inputValue = e.target.value;
+    setValue(inputValue);
+  };
   return (
     <>
-      <Text mb='8px'>{value}</Text>
+      <Text mb="8px">{value}</Text>
       <Textarea
         value={value}
         onChange={handleInputChange}
-        placeholder='Editing a new note, the world is your oyster.'
-        size='sm'
+        placeholder="Editing a new note, the world is your oyster."
+        size="sm"
       />
     </>
-  )
+  );
 }
 
 function NoteBox() {
-  let [value, setValue] = React.useState('')
+  let [value, setValue] = React.useState("");
 
   let handleInputChange = (e) => {
-    let inputValue = e.target.value
-    setValue(inputValue)
-  }
+    let inputValue = e.target.value;
+    setValue(inputValue);
+  };
   return (
     <>
-      <Text mb='8px'>{value}</Text>
+      <Text mb="8px">{value}</Text>
       <Textarea
         value={value}
         onChange={handleInputChange}
-        placeholder='Make a new note, start typing away...'
-        size='sm'
+        placeholder="Make a new note, start typing away..."
+        size="sm"
       />
     </>
-  )
+  );
 }
 
 function NewNote() {
   return (
     <div>
       <div className="myHeader">
-        <NoteTitle/>
+        <NoteTitle />
       </div>
       <div className="subHeader">
-        <NoteSubheader/>
+        <NoteSubheader />
       </div>
       <div className="textedit">
-        <NoteBox/>
+        <NoteBox />
       </div>
     </div>
   );

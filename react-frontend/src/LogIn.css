@@ -32,7 +32,7 @@
   align-self: center;
   cursor: pointer;
   height: 77px;
-  margin-top: 14.0px;
+  margin-top: 14px;
   object-fit: cover;
   width: 81px;
 }
@@ -132,7 +132,7 @@
 
 .overlap-group8 {
   height: 915px;
-  margin-right: 1.0px;
+  margin-right: 1px;
   margin-top: 197px;
   position: relative;
   width: 1239px;
@@ -158,7 +158,7 @@
 .overlap-group-container {
   align-items: flex-start;
   display: flex;
-  margin-left: 35.0px;
+  margin-left: 35px;
   margin-top: 11px;
   min-width: 1237px;
 }
@@ -184,7 +184,7 @@
 .address-container {
   align-self: center;
   height: 25px;
-  margin-bottom: 2.0px;
+  margin-bottom: 2px;
   margin-left: 6px;
   position: relative;
   width: 143px;
@@ -220,4 +220,3 @@
   top: 0;
   width: 232px;
 }
-

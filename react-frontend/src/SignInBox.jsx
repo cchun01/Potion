@@ -22,30 +22,38 @@ function SignInBox(props) {
   return (
     <div className="sign-in-box">
       <Text222 />
-      <div className="overlap-group1" style={{ backgroundImage: `url(${overlapGroup1})` }}>
+      <div
+        className="overlap-group1"
+        style={{ backgroundImage: `url(${overlapGroup1})` }}
+      >
         <div className="email montserrat-medium-nobel-20px">{email}</div>
       </div>
-      <div className="overlap-group3" style={{ backgroundImage: `url(${overlapGroup3})` }}>
+      <div
+        className="overlap-group3"
+        style={{ backgroundImage: `url(${overlapGroup3})` }}
+      >
         <div className="password montserrat-medium-nobel-20px">{password}</div>
       </div>
       <Text3 />
       <div className="overlap-group">
         <Link to="/my-notes">
-          <img className="rectangle" src={rectangle4} />
+          <img className="rectangle" alt="" src={rectangle4} />
         </Link>
         <div className="sign-in montserrat-extra-bold-white-20px">{signIn}</div>
       </div>
       <div className="flex-row">
-        <img className="line-7" src={line7} />
+        <img className="line-7" alt="" src={line7} />
         <div className="or montserrat-medium-nobel-20px">{or}</div>
-        <img className="line-8" src={line8} />
+        <img className="line-8" alt="" src={line8} />
       </div>
       <div className="overlap-group2">
         <Link to="/try-notion-free">
-          <img className="rectangle" src={rectangle5} />
+          <img className="rectangle" alt="" src={rectangle5} />
         </Link>
         <Link to="/try-notion-free">
-          <div className="sign-up montserrat-extra-bold-black-20px">{signUp}</div>
+          <div className="sign-up montserrat-extra-bold-black-20px">
+            {signUp}
+          </div>
         </Link>
       </div>
     </div>

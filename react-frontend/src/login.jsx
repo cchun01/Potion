@@ -37,42 +37,54 @@ function LogIn(props) {
         <div className="overlap-group4">
           <div className="nav-bar">
             <Link to="/home" className="align-self-flex-center">
-              <img className="image-1-1" src={image1} />
+              <img className="image-1-1" alt="" src={image1} />
             </Link>
             <div className="text">
               <Link to="/home">
                 <div className="potion montserrat-bold-black-20px">
                   <span className="montserrat-bold-envy-20px">{spanText1}</span>
-                  <span className="montserrat-medium-envy-20px">{spanText2}</span>
+                  <span className="montserrat-medium-envy-20px">
+                    {spanText2}
+                  </span>
                 </div>
-              </Link>x
+              </Link>
+              x
               <Link to="/about-us">
-                <div className="about-us montserrat-medium-black-20px">{aboutUs}</div>
+                <div className="about-us montserrat-medium-black-20px">
+                  {aboutUs}
+                </div>
               </Link>
               <Link to="/help">
                 <div className="help montserrat-medium-black-20px">{help}</div>
               </Link>
             </div>
             <div className="text-1">
-              <div className="log-in-1 montserrat-medium-black-20px">{logIn}</div>
+              <div className="log-in-1 montserrat-medium-black-20px">
+                {logIn}
+              </div>
               <Link to="/try-notion-free">
-                <div className="try-potion-free montserrat-medium-black-20px">{tryPotionFree}</div>
+                <div className="try-potion-free montserrat-medium-black-20px">
+                  {tryPotionFree}
+                </div>
               </Link>
             </div>
           </div>
-          <img className="line-1" src={line1} />
-          <img className="line-2" src={line2} />
+          <img className="line-1" alt="" src={line1} />
+          <img className="line-2" alt="" src={line2} />
         </div>
         <div className="overlap-group8">
-          <img className="image-7" src={image7} />
+          <img className="image-7" alt="" src={image7} />
           <SignInBox {...signInBoxProps} />
-          <img className="line-10" src={line10} />
+          <img className="line-10" alt="" src={line10} />
         </div>
         <div className="overlap-group-container">
-          <div className="image-container" style={{ backgroundImage: `url(${imageContainer1})` }}>
-            <img className="image" src={image4} />
-            <img className="image" src={image8} />
-            <img className="image" src={image11} />
+          <div
+            className="image-container"
+            style={{ backgroundImage: `url(${imageContainer1})` }}
+          >
+            <img className="image" alt="" src={image4} />
+            <img className="image" alt="" src={image8} />
+            <img className="image" alt="" src={image11} />
           </div>
           <div className="address-container montserrat-medium-black-15px">
             <div className="address">{address1}</div>
@@ -80,10 +92,13 @@ function LogIn(props) {
             <div className="address">{address3}</div>
             <div className="address">{address4}</div>
           </div>
-          <div className="image-container-1" style={{ backgroundImage: `url(${imageContainer2})` }}>
-            <img className="image-1" src={image5} />
-            <img className="image-1" src={image10} />
-            <img className="image-1" src={image12} />
+          <div
+            className="image-container-1"
+            style={{ backgroundImage: `url(${imageContainer2})` }}
+          >
+            <img className="image-1" alt="" src={image5} />
+            <img className="image-1" alt="" src={image10} />
+            <img className="image-1" alt="" src={image12} />
           </div>
         </div>
       </div>

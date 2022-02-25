@@ -23,12 +23,13 @@ function LogIn() {
       <input type="text" className="textboxULog" />
       <div className="fieldNamePLog">Password:</div>
       <input type="text" className="textboxPLog" />
-      <button onClick={() => {
-        clicked();
-        navigate("/MyNotes");
-      }}
-       className="submitLog"
-       >
+      <button
+        onClick={() => {
+          clicked();
+          navigate("/MyNotes");
+        }}
+        className="submitLog"
+      >
         Submit
       </button>
     </div>

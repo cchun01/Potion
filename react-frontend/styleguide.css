@@ -1,11 +1,11 @@
-:root { 
+:root {
   --black: #000000;
   --envy: #8abd91;
   --eunry: #d5a1a1;
   --light-wisteria: #c5a0d2;
   --nobel: #b0b0b0;
   --white: #ffffff;
- 
+
   --font-size-l: 23px;
   --font-size-m: 20px;
   --font-size-s: 15px;
@@ -13,7 +13,7 @@
   --font-size-xxl: 50px;
   --font-size-xxxl: 60px;
   --font-size-xxxxl: 72px;
- 
+
   --font-family-brownbaglunch-medium: "BrownBagLunch-Medium", Helvetica;
   --font-family-montserrat: "Montserrat", Helvetica;
 }

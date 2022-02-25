@@ -65,7 +65,7 @@
 
 .overlap-group2-4 {
   height: 469px;
-  margin-left: 55.0px;
+  margin-left: 55px;
   margin-top: 169px;
   position: relative;
   width: 1217px;
@@ -126,7 +126,7 @@
 
 .line-3-3 {
   height: 1px;
-  margin-right: 1.0px;
+  margin-right: 1px;
   margin-top: 572px;
   width: 1239px;
   z-index: 3;
@@ -135,7 +135,7 @@
 .flex-row-4 {
   align-items: flex-start;
   display: flex;
-  margin-left: 35.0px;
+  margin-left: 35px;
   margin-top: 22px;
   min-width: 1237px;
   z-index: 1;
@@ -151,7 +151,7 @@
 .address-5 {
   align-self: center;
   letter-spacing: 0;
-  margin-bottom: 2.0px;
+  margin-bottom: 2px;
   margin-left: 6px;
   min-height: 25px;
   width: 143px;
@@ -168,4 +168,3 @@
   object-fit: cover;
   width: 232px;
 }
-
