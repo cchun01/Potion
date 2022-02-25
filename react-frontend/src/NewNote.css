@@ -1,0 +1,174 @@
+Textarea{
+  font-family: var(--font-family-montserrat);
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px #00000040;
+  display: flex;
+  flex-direction: column;
+  min-height: 50px;
+  min-width: 400px;
+  border-color: #b0b0b0;
+  font-size: 20px;
+}
+
+.myHeader {
+    align-self: flex-start;
+    letter-spacing: 0;
+    margin-left: 140px;
+    margin-top: 251px;
+    min-height: 61px;
+    z-index: 2;
+    font-size: 50px;
+    font-family: var(--font-family-montserrat);
+    font-weight: 800;
+    color: black;
+}
+
+.subHeader {
+    align-self: flex-start;
+    letter-spacing: 0;
+    margin-left: 141px;
+    margin-top: 13px;
+    min-height: 24px;
+    z-index: 3;
+    color: #b0b0b0;
+    font-family: var(--font-family-montserrat);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+button {
+	width: 64px;
+	height: 32px;
+	border: none;
+	background: #8abd91;
+	color: white;
+	font-size: 16px;
+	font-family: 'Public Sans', sans-serif;
+	font-weight: 700;
+	border-radius: 28px;
+	margin-top: 15px;
+  margin-left: 30px;
+	margin-right: 500px;
+	padding: 4px;
+}
+
+button:hover {
+	background-color:black;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+button:disabled {
+	background-color: #D3D3D3;
+	color: white;
+}
+
+.textedit {
+    align-self: flex-start;
+    letter-spacing: 0;
+    margin-left: 141px;
+    margin-top: 13px;
+    min-height: 24px;
+    z-index: 3;
+    color: black;
+    font-family: var(--font-family-montserrat);
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+    min-height: 28px;
+  }
+  
+  .label:hover {
+    cursor: pointer;
+    background: rgba(220, 220, 220, 0.4);
+  }
+  
+  .textareaView {
+    overflow-y: auto;
+    transition: background 0.2s ease;
+  }
+  
+  /* Width */
+  .textareaView::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Track */
+  .textareaView::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+  .textareaView::-webkit-scrollbar-thumb {
+    background: #ccc;
+  }
+  /* Handle on hover */
+  .textareaView::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
+  /* Handle on drag */
+  .textareaView::-webkit-scrollbar-thumb:active {
+    background: #666;
+  }
+  
+  .textareaView:hover {
+    cursor: pointer;
+    background: rgba(220, 220, 220, 0.4);
+  }
+  
+  .shared {
+    width: 100%;
+    padding: 5px;
+    display: block;
+    margin: 3px 0 3px 0;
+    scrollbar-width: thin;
+  }
+  
+  /* Width */
+  .shared::-webkit-scrollbar {
+    width: 8px;
+  }
+  /* Track */
+  .shared::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+  .shared::-webkit-scrollbar-thumb {
+    background: #ccc;
+  }
+  /* Handle on hover */
+  .shared::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
+  /* Handle on drag */
+  .shared::-webkit-scrollbar-thumb:active {
+    background: #666;
+  }
+  
+  .placeholder {
+    color: #999;
+  }
+  
+  .inline {
+    display: inline !important;
+  }
+  
+  .readonly {
+    cursor: auto !important;
+  }
+  
+  .readonly:hover {
+    cursor: auto !important;
+  }
+
+
