@@ -1,58 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./SignUp.css";
-import { useNavigate } from "react-router-dom";
 
-function clicked() {
-  const firstName = document.getElementsByClassName("textboxFNSign")[0].value;
-  const email = document.getElementsByClassName("textboxESign")[0].value;
-  const username = document.getElementsByClassName("textboxUSign")[0].value;
-  const password = document.getElementsByClassName("textboxPSign")[0].value;
-  if (firstName === "") {
-    console.log("No first name provided");
-  } else if (email === "") {
-    console.log("No email provided");
-  } else if (username === "") {
-    console.log("No username provided");
-  } else if (password === "") {
-    console.log("No password provided");
-  } else {
-    console.log(
-      "Profile\n\nFirst Name: " +
-        firstName +
-        "\nEmail: " +
-        email +
-        "\nUseranme: " +
-        username +
-        "\nPassword: " +
-        password
-    );
-  }
-}
-
-function SignUp() {
-  let navigate = useNavigate();
+function TryNotionFree() {
   return (
-    <div>
-      <div className="headerSU">Sign Up For Potion</div>
-      <div className="fieldNameFNSign">First Name:</div>
-      <input type="text" className="textboxFNSign" />
-      <div className="fieldNameESign">Email:</div>
-      <input type="text" className="textboxESign" />
-      <div className="fieldNameUSign">Username:</div>
-      <input type="text" className="textboxUSign" />
-      <div className="fieldNamePSign">Password:</div>
-      <input type="text" className="textboxPSign" />
-      <button
-        onClick={() => {
-          clicked();
-          navigate("/EmailVerification");
-        }}
-        className="submitSign"
-      >
-        Submit
-      </button>
+    <div className="div1">
+      <div className="div2">
+        <img
+          className="outlineImage"
+          alt=""
+          src={require("./signupImages/lineOutline.png")}
+        />
+        <div className="signUpForm">
+          <div className="signUpHeader">Sign Up</div>
+        </div>
+        <Link to="/my-notes-first-time-user">
+          <div className="submitSign">Sign Up</div>
+        </Link>
+        <div className="username">Username</div>
+        <div className="usernameBox"></div>
+        <div className="email">Email</div>
+        <div className="emailBox"></div>
+        <div className="password">Password</div>
+        <div className="passwordBox"></div>
+        <div className="confirm-password">Confirm Password</div>
+        <div className="confPasswordBox"></div>
+      </div>
     </div>
   );
 }
 
-export default SignUp;
+export default TryNotionFree;
