@@ -62,7 +62,7 @@ function MyApp() {
         </div>
       </nav>
       <Routes>
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/try-notion-free" element={<SignUp />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/emailverification" element={<EmailVerification />} />
         <Route path="/mynotes" element={<MyNotes />} />
