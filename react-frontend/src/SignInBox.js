@@ -3,45 +3,39 @@ import { Link } from "react-router-dom";
 import Text222 from "./Text222";
 import Text3 from "./Text3";
 import "./SignInBox.css";
+import { useNavigate } from "react-router-dom";
 
 const linkStyle = {
   textDecoration: "none",
   color: "black",
 };
 
+function Clicked() {
+  const email = document.getElementsByClassName("overlap-grou1")[0].value;
+  const password = document.getElementsByClassName("overlap-group2")[0].value;
+  if (email === "") {
+    console.log("No email provided");
+  } else if (password === "") {
+    console.log("No password provided");
+  } else {
+    console.log("Profile\n\nEmail: " + email + "\nPassword: " + password);
+  }
+}
+
 function SignInBox() {
+  let navigate = useNavigate();
   return (
     <div className="sign-in-box">
       <Text222 />
-      <div
-        className="overlap-group1"
-        style={{
-          backgroundImage: `url(${require("./signinboxImages/rectangle-2@1x.png")})`,
-        }}
-      >
-        <div className="email">{"Email"}</div>
-      </div>
-      <div
-        className="overlap-group3"
-        style={{
-          backgroundImage: `url(${require("./signinboxImages/rectangle-2@1x.png")})`,
-        }}
-      >
-        <div className="password">{"Password"}</div>
-      </div>
+      <div className="emailLogIn">{"Email"}</div>
+      <input type="text" className="overlap-group1"/>
+      <div className="passwordLogIn">{"Password"}</div>
+      <input type="text" className="overlap-group3"/>
       <Text3 />
-      <div className="overlap-group">
-        <Link to="/my-notes">
-          <img
-            className="rectangle"
-            alt=""
-            src={require("./signinboxImages/rectangle-4@1x.png")}
-          />
-        </Link>
-        <Link to="/my-notes" style={linkStyle}>
-          <div className="sign-in">{"Sign In"}</div>
-        </Link>
-      </div>
+      <button onClick={()=> {navigate("/my-notes");}} className="overlap-group">
+        Sign In
+      </button>
+
       <div className="flex-row">
         <img
           className="line-7"
@@ -55,18 +49,11 @@ function SignInBox() {
           src={require("./signinboxImages/line-7@2x.png")}
         />
       </div>
-      <div className="overlap-group2">
-        <Link to="/try-notion-free">
-          <img
-            className="rectangle"
-            alt=""
-            src={require("./signinboxImages/rectangle-5@1x.png")}
-          />
-        </Link>
-        <Link to="/try-notion-free" style={linkStyle}>
-          <div className="sign-up">{"Sign Up"}</div>
-        </Link>
-      </div>
+
+      <button onClick={()=> {navigate("/try-notion-free");}} className="overlap-group2">
+        Sign Up
+      </button>
+
     </div>
   );
 }
