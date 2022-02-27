@@ -1,6 +1,8 @@
 import "./MyNotes.css";
+import { useNavigate } from "react-router-dom";
 
 function MyNotes() {
+  let navigate = useNavigate();
   return (
     <div>
       <div className="myHeader">My Notes</div>
@@ -8,7 +10,9 @@ function MyNotes() {
       <div className="notesRow">
         <div className="noteContainer">
           <div className="noteBoxStyle">
-            <div className="noteTitle">+ New Note</div>
+            <button onClick={()=> {navigate("/NewNote");}} className="noteTitle">
+            + New Note
+             </button>
             <div className="noteEmoji"> 📝 </div>
           </div>
         </div>

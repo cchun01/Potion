@@ -1,8 +1,13 @@
+button{
+  border: 0px;
+  cursor: pointer;
+}
+
 .myHeader {
   align-self: flex-start;
   letter-spacing: 0;
   margin-left: 140px;
-  margin-top: 251px;
+  margin-top: 80px;
   min-height: 61px;
   z-index: 2;
   font-size: 50px;
@@ -35,7 +40,6 @@
 
 .noteContainer {
   align-items: flex-start;
-  cursor: pointer;
   display: flex;
   height: 200px;
   margin-left: 87px;
