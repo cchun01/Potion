@@ -5,6 +5,7 @@ import EmailVerification from "./EmailVerification";
 import MyNotes from "./MyNotes";
 import LogIn from "./LogIn";
 import Home from "./Home";
+import NewNote from "./NewNote";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -67,6 +68,7 @@ function MyApp() {
         <Route path="/emailverification" element={<EmailVerification />} />
         <Route path="/my-notes" element={<MyNotes />} />
         <Route path="/log-in" element={<LogIn />} />
+        <Route path="/new-note" element={<NewNote />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>

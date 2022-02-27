@@ -14,7 +14,7 @@ function TryNotionFree() {
         <div className="signUpForm">
           <div className="signUpHeader">Sign Up</div>
         </div>
-        <Link to="/my-notes-first-time-user">
+        <Link to="/my-notes">
           <div className="submitSign">Sign Up</div>
         </Link>
         <div className="username">Username</div>
