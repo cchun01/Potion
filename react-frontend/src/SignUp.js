@@ -1,6 +1,40 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./SignUp.css";
+
+function clicked() {
+  const firstName = document.getElementsByClassName("usernameBox")[0].value;
+  const email = document.getElementsByClassName("emailBox")[0].value;
+  const username = document.getElementsByClassName("passwordBox")[0].value;
+  const password = document.getElementsByClassName("confPasswordBox")[0].value;
+  if (firstName === "") {
+    console.log("No first name provided");
+    document.getElementById("error").innerHTML = "No first name provided";
+  } else if (email === "") {
+    console.log("No email provided");
+    document.getElementById("error").innerHTML = "No email provided";
+  } else if (!(email.includes("@") && email.includes("."))) {
+    console.log("Invalid email provided");
+    document.getElementById("error").innerHTML = "Invalid email provided";
+  } else if (username === "") {
+    console.log("No username provided");
+    document.getElementById("error").innerHTML = "No username provided";
+  } else if (password === "") {
+    console.log("No password provided");
+    document.getElementById("error").innerHTML = "No password provided";
+  } else {
+    console.log(
+      "Profile\n\nFirst Name: " +
+        firstName +
+        "\nEmail: " +
+        email +
+        "\nUseranme: " +
+        username +
+        "\nPassword: " +
+        password
+    );
+    window.location.href = "my-notes";
+  }
+}
 
 function TryNotionFree() {
   return (
@@ -14,17 +48,18 @@ function TryNotionFree() {
         <div className="signUpForm">
           <div className="signUpHeader">Sign Up</div>
         </div>
-        <Link to="/my-notes">
-          <div className="submitSign">Sign Up</div>
-        </Link>
+        <div onClick={clicked} className="submitSign">
+          Sign Up
+        </div>
         <div className="username">Username</div>
-        <div className="usernameBox"></div>
+        <input type="text" className="usernameBox"></input>
         <div className="email">Email</div>
-        <div className="emailBox"></div>
+        <input type="text" className="emailBox"></input>
         <div className="password">Password</div>
-        <div className="passwordBox"></div>
+        <input type="text" className="passwordBox"></input>
         <div className="confirm-password">Confirm Password</div>
-        <div className="confPasswordBox"></div>
+        <input type="text" className="confPasswordBox"></input>
+        <p className="errorMessage" id="error"></p>
       </div>
     </div>
   );
