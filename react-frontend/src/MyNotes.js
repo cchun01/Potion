@@ -10,9 +10,14 @@ function MyNotes() {
       <div className="notesRow">
         <div className="noteContainer">
           <div className="noteBoxStyle">
-            <button onClick={()=> {navigate("/new-note");}} className="noteTitle">
-            + New Note
-             </button>
+            <button
+              onClick={() => {
+                navigate("/new-note");
+              }}
+              className="noteTitle"
+            >
+              + New Note
+            </button>
             <div className="noteEmoji"> 📝 </div>
           </div>
         </div>

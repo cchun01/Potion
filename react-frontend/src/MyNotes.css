@@ -1,4 +1,4 @@
-button{
+button {
   border: 0px;
   cursor: pointer;
 }
@@ -41,7 +41,6 @@ button{
 }
 
 .noteContainer {
-
   align-items: flex-start;
   display: flex;
   height: 200px;

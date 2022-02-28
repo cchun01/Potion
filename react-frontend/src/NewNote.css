@@ -1,5 +1,5 @@
-::placeholder{
-  color: #B0B0B0;
+::placeholder {
+  color: #b0b0b0;
 }
 
 .myHeaderBox {
@@ -36,7 +36,7 @@
   font-size: 23px;
   font-style: normal;
   font-weight: 500;
-  position: relative; 
+  position: relative;
   bottom: 50px;
   background-size: 100% 100%;
   display: flex;
@@ -51,7 +51,7 @@
   box-sizing: content-box;
 }
 
-.returnMyNotes{
+.returnMyNotes {
   background-size: 100% 100%;
   height: 55px;
   margin-left: 140px;
@@ -78,7 +78,7 @@ button {
   padding: 4px;
 }
 
-.saveButton{
+.saveButton {
   width: 100px;
   height: 32px;
   float: right;
@@ -107,7 +107,7 @@ button:disabled {
   font-size: 23px;
   font-style: normal;
   font-weight: 500;
-  position: relative; 
+  position: relative;
   bottom: 100px;
 }
 

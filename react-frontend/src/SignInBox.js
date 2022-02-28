@@ -10,11 +10,16 @@ function SignInBox() {
     <div className="sign-in-box">
       <Text222 />
       <div className="emailLogIn">{"Email"}</div>
-      <input type="text" className="overlap-group1"/>
+      <input type="text" className="overlap-group1" />
       <div className="passwordLogIn">{"Password"}</div>
-      <input type="text" className="overlap-group3"/>
+      <input type="text" className="overlap-group3" />
       <Text3 />
-      <button onClick={()=> {navigate("/my-notes");}} className="overlap-group">
+      <button
+        onClick={() => {
+          navigate("/my-notes");
+        }}
+        className="overlap-group"
+      >
         Sign In
       </button>
 
@@ -32,10 +37,14 @@ function SignInBox() {
         />
       </div>
 
-      <button onClick={()=> {navigate("/try-notion-free");}} className="overlap-group2">
+      <button
+        onClick={() => {
+          navigate("/try-notion-free");
+        }}
+        className="overlap-group2"
+      >
         Sign Up
       </button>
-
     </div>
   );
 }
