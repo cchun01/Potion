@@ -1,26 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Text222 from "./Text222";
 import Text3 from "./Text3";
 import "./SignInBox.css";
 import { useNavigate } from "react-router-dom";
-
-const linkStyle = {
-  textDecoration: "none",
-  color: "black",
-};
-
-function Clicked() {
-  const email = document.getElementsByClassName("overlap-grou1")[0].value;
-  const password = document.getElementsByClassName("overlap-group2")[0].value;
-  if (email === "") {
-    console.log("No email provided");
-  } else if (password === "") {
-    console.log("No password provided");
-  } else {
-    console.log("Profile\n\nEmail: " + email + "\nPassword: " + password);
-  }
-}
 
 function SignInBox() {
   let navigate = useNavigate();
