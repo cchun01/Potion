@@ -10,9 +10,9 @@ function clicked() {
     console.log("No email or password provided");
   } else if (password === "") {
     console.log("No password provided");
-  } else if (email === ""){
+  } else if (email === "") {
     console.log("No email provided");
-  } else{
+  } else {
     console.log("Profile\n\nEmail: " + email + "\nPassword: " + password);
   }
 }
