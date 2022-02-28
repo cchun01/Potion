@@ -13,7 +13,7 @@ function clicked() {
   } else if (email === "") {
     console.log("No email provided.");
   } else {
-    console.log("Profile\nEmail: " + email + "\nPassword: " + password +"\nWelcome Back! :)");
+    console.log("Profile\nEmail: " + email + "\nPassword: " + password + "\nWelcome Back! :)");
   }
 }
 function SignInBox() {
