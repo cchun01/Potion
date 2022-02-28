@@ -1,79 +1,20 @@
 import "./NewNote.css";
 import React from "react";
-import { Textarea } from "@chakra-ui/textarea";
-import { Text } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
-function NoteTitle() {
-  let [value, setValue] = React.useState("");
-
-  let handleInputChange = (e) => {
-    let inputValue = e.target.value;
-    setValue(inputValue);
-  };
-  return (
-    <>
-      <Text mb="8px">{value}</Text>
-      <Textarea
-        value={value}
-        onChange={handleInputChange}
-        placeholder="Untitled Note"
-        size="sm"
-      />
-    </>
-  );
-}
-
-function NoteSubheader() {
-  let [value, setValue] = React.useState("");
-
-  let handleInputChange = (e) => {
-    let inputValue = e.target.value;
-    setValue(inputValue);
-  };
-  return (
-    <>
-      <Text mb="8px">{value}</Text>
-      <Textarea
-        value={value}
-        onChange={handleInputChange}
-        placeholder="Editing a new note, the world is your oyster."
-        size="sm"
-      />
-    </>
-  );
-}
-
-function NoteBox() {
-  let [value, setValue] = React.useState("");
-
-  let handleInputChange = (e) => {
-    let inputValue = e.target.value;
-    setValue(inputValue);
-  };
-  return (
-    <>
-      <Text mb="8px">{value}</Text>
-      <Textarea
-        value={value}
-        onChange={handleInputChange}
-        placeholder="Make a new note, start typing away..."
-        size="sm"
-      />
-    </>
-  );
-}
 
 function NewNote() {
+  let navigate = useNavigate();
   return (
     <div>
-      <div className="myHeader">
-        <NoteTitle />
+      <button onClick={()=> {navigate("/my-notes");}} className="returnMyNotes">
+        My Notes
+      </button>
+      <div>
+      <textarea className="myHeaderBox" placeholder="Click to edit title"></textarea>
       </div>
-      <div className="subHeader">
-        <NoteSubheader />
-      </div>
-      <div className="textedit">
-        <NoteBox />
+      <div>
+      <textarea className="myTextBox" placeholder="Click to edit your new note..."></textarea>
       </div>
     </div>
   );

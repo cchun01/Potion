@@ -12,7 +12,7 @@ button{
   font-family: var(--font-family-montserrat);
   font-weight: 800;
   position: relative;
-  bottom: 120px;
+  margin-top: 90px;
 }
 
 .subHeader {
@@ -28,7 +28,6 @@ button{
   font-style: normal;
   font-weight: 500;
   position: relative;
-  bottom: 120px;
 }
 
 .notesRow {
@@ -39,10 +38,10 @@ button{
   min-width: 1205px;
   z-index: 4;
   position: relative;
-  bottom: 120px;
 }
 
 .noteContainer {
+
   align-items: flex-start;
   display: flex;
   height: 200px;
