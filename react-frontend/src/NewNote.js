@@ -2,7 +2,7 @@ import "./NewNote.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-
+//comment
 function NewNote() {
   let navigate = useNavigate();
   return (
