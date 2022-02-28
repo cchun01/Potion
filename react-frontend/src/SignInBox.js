@@ -7,13 +7,13 @@ function clicked() {
   const email = document.getElementsByClassName("overlap-group1")[0].value;
   const password = document.getElementsByClassName("overlap-group3")[0].value;
   if (email === "" && password === "") {
-    console.log("No email or password provided");
+    console.log("No email or password provided.");
   } else if (password === "") {
-    console.log("No password provided");
+    console.log("No password provided.");
   } else if (email === "") {
-    console.log("No email provided");
+    console.log("No email provided.");
   } else {
-    console.log("Profile\n\nEmail: " + email + "\nPassword: " + password);
+    console.log("Profile\nEmail: " + email + "\nPassword: " + password +"\nWelcome Back!");
   }
 }
 function SignInBox() {
