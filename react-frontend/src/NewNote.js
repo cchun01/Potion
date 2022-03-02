@@ -2,7 +2,6 @@ import "./NewNote.css";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
-//comment
 export default function NewNote({ myid }) {
   let [allNotes, setNote] = useState();
   useEffect(() => {
@@ -60,24 +59,8 @@ export default function NewNote({ myid }) {
           </div>
         </div>
       ) : (
-        // <div>
-        //   <div>
-        //     <textarea
-        //       className="myHeaderBox"
-        //       placeholder="Click to edit title"
-        //     ></textarea>
-        //   </div>
-        //   <div>
-        //     <textarea
-        //       className="myTextBox"
-        //       placeholder="Click to edit your new note..."
-        //     ></textarea>
-        //   </div>
-        // </div>
-        <p>Loading</p>
+        <p></p>
       )}
     </div>
   );
 }
-
-// export default NewNote;
