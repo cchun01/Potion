@@ -1,18 +1,20 @@
+/* Sign up button */
 .submitSign {
-  position: absolute;
+  position: relative;
   width: 243px;
   height: 64px;
   left: 40%;
   top: 65%;
 
-  background: #96c498;
+  background: #ffffff;
   font-family: var(--font-family-montserrat);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 20px;
+  border: 3px solid rgb(138, 189, 145); 
 }
 
 .errorMessage {
@@ -24,7 +26,8 @@
   color: red;
 }
 
-.div1 {
+
+/* .div1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,17 +38,18 @@
 .div1 > * {
   flex-shrink: 0;
   pointer-events: auto;
-}
+} */
 
 .div2 {
   height: 949px;
   margin-right: -34px;
-  margin-top: 283px;
+  margin-top: 117px;
   position: relative;
   width: 1374px;
   z-index: 2;
 }
 
+/* Pen drawing */
 .outlineImage {
   height: 382px;
   left: 674px;
@@ -59,13 +63,14 @@
   background-color: var(--white);
   border-radius: 7px;
   height: 55px;
-  left: 399px;
+  margin-left: 399px;
   position: absolute;
   top: 189px;
   width: 432px;
   border: 1px solid black;
   padding-left: 20px;
 }
+
 .emailBox {
   background-color: var(--white);
   border-radius: 7px;
@@ -143,7 +148,7 @@
 }
 
 .signUpForm {
-  align-items: flex-start;
+  align-self: center;
   background-color: var(--white);
   border-radius: 8px;
   box-shadow: 0px 4px 4px #00000040;
@@ -159,10 +164,12 @@
 
 .signUpHeader {
   height: 61px;
-  width: 209px;
+  width: 185px;
   letter-spacing: 0;
   width: 207px;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 800;
   font-family: var(--font-family-montserrat);
+  font-style: normal;
+  color: var(--black);
 }
