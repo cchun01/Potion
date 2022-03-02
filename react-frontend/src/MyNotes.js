@@ -35,7 +35,7 @@ function MyNotes() {
             </div>
           ))
         ) : (
-          <p>Loading...</p>
+          <p></p>
         )}
         <div className="noteContainer">
           <div className="noteBoxStyle">
