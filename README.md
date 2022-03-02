@@ -1,5 +1,5 @@
 # Potion
-![example workflow](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
+![example workflow](https://github.com/cchun01/Potion/actions/workflows/node.js.yml/badge.svg)
 
 **Linter:**
 The Potion team is using the Prettier ESLint extension available in VSCode. (https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint).
