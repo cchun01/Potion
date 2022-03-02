@@ -3,7 +3,9 @@ import Text222 from "./Text222";
 import Text3 from "./Text3";
 import "./SignInBox.css";
 import { useNavigate } from "react-router-dom";
-function clicked() {
+import axios from "axios";
+
+async function clicked() {
   const email = document.getElementsByClassName("overlap-group1")[0].value;
   const password = document.getElementsByClassName("overlap-group3")[0].value;
   if (email === "" && password === "") {
@@ -13,13 +15,13 @@ function clicked() {
   } else if (email === "") {
     console.log("No email provided.");
   } else {
-    console.log(
-      "Profile\nEmail: " +
-        email +
-        "\nPassword: " +
-        password +
-        "\nWelcome Back! :)"
-    );
+    const user = await axios.get(`http://localhost:3001/api/users/${email}`);
+    if (user.data.password === password) {
+      console.log("Profile\n\nEmail: " + email + "\nPassword: " + password);
+      window.location.href = "my-notes";
+    } else {
+      console.log("Password in backend doesn't match");
+    }
   }
 }
 function SignInBox() {
@@ -35,7 +37,6 @@ function SignInBox() {
       <button
         onClick={() => {
           clicked();
-          navigate("/my-notes");
         }}
         className="overlap-group"
       >
