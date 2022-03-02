@@ -6,7 +6,6 @@ import MyNotes from "./MyNotes";
 import LogIn from "./LogIn";
 import Home from "./Home";
 import NewNote from "./NewNote";
-import Help from "./Help";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
