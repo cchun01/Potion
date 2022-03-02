@@ -48,7 +48,6 @@ function LogIn(props) {
                   </span>
                 </div>
               </Link>
-              x
               <Link to="/about-us">
                 <div className="about-us montserrat-medium-black-20px">
                   {aboutUs}

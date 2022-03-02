@@ -20,6 +20,7 @@ function MyApp() {
       <nav>
         <div className="overlap-group4">
           <div className="nav-bar">
+
             <Link to="/" className="align-self-flex-center" style={linkStyle}>
               <img
                 className="image-1-1"
@@ -27,6 +28,7 @@ function MyApp() {
                 src={require("./navbarImages/image-1@2x.png")}
               />
             </Link>
+            
             <div className="text">
               <Link to="/" style={linkStyle}>
                 <div className="potion">
