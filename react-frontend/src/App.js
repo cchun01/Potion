@@ -68,7 +68,10 @@ function MyApp() {
         <Route path="/emailverification" element={<EmailVerification />} />
         <Route path="/my-notes" element={<MyNotes />} />
         <Route path="/log-in" element={<LogIn />} />
-        <Route path="/new-note" element={<NewNote />} />
+        <Route path="/new-note" element={<NewNote myid={0} />} />
+        <Route path="/new-note1" element={<NewNote myid={1} />} />
+        <Route path="/new-note2" element={<NewNote myid={2} />} />
+        <Route path="/new-note3" element={<NewNote myid={3} />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
