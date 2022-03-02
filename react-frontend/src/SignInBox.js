@@ -1,8 +1,12 @@
 import React from "react";
 import Text222 from "./Text222";
 import Text3 from "./Text3";
+import "./ShowPassword";
 import "./SignInBox.css";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import ShowPassword from "./ShowPassword";
+
 function clicked() {
   const email = document.getElementsByClassName("overlap-group1")[0].value;
   const password = document.getElementsByClassName("overlap-group3")[0].value;
@@ -24,13 +28,33 @@ function clicked() {
 }
 function SignInBox() {
   let navigate = useNavigate();
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
+
   return (
     <div className="sign-in-box">
       <Text222 />
-      <div className="emailLogIn">{"Email"}</div>
-      <input type="text" className="overlap-group1" />
-      <div className="passwordLogIn">{"Password"}</div>
-      <input type="text" className="overlap-group3" />
+      <div className="emailLogIn">{""}</div>
+      <input
+        type="text"
+        className="overlap-group1"
+        placeholder="Email Address"
+      />
+      <div className="passwordLogIn">{""}</div>
+      <input
+        type={passwordShown ? "text" : "password"}
+        className="overlap-group3"
+        placeholder="Password"
+      />
+
+      <ShowPassword />
+      <button onClick={togglePassword} className="show-password">
+        {" "}
+        show{" "}
+      </button>
+
       <Text3 />
       <button
         onClick={() => {

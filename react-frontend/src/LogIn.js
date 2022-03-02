@@ -13,6 +13,7 @@ function LogIn() {
             alt=""
             src={require("./loginImages/image-7@2x.png")}
           />
+
           <SignInBox {...SignInBox} />
           <img
             className="line-10"
@@ -26,51 +27,17 @@ function LogIn() {
             style={{
               backgroundImage: `url(${require("./loginImages/image-2@2x.png")})`,
             }}
-          >
-            <img
-              className="image"
-              alt=""
-              src={require("./loginImages/image-2@2x.png")}
-            />
-            <img
-              className="image"
-              alt=""
-              src={require("./loginImages/image-2@2x.png")}
-            />
-            <img
-              className="image"
-              alt=""
-              src={require("./loginImages/image-2@2x.png")}
-            />
-          </div>
+          ></div>
           <div className="address-container">
             <div className="address">{"2022 Potion, Inc"}</div>
-            <div className="address">{"2022 Potion, Inc"}</div>
-            <div className="address">{"2022 Potion, Inc"}</div>
-            <div className="address">{"2022 Potion, Inc"}</div>
           </div>
+
           <div
             className="image-container-1"
             style={{
               backgroundImage: `url(${require("./loginImages/image-3@2x.png")})`,
             }}
-          >
-            <img
-              className="image-1"
-              alt=""
-              src={require("./loginImages/image-3@2x.png")}
-            />
-            <img
-              className="image-1"
-              alt=""
-              src={require("./loginImages/image-3@2x.png")}
-            />
-            <img
-              className="image-1"
-              alt=""
-              src={require("./loginImages/image-3@2x.png")}
-            />
-          </div>
+          ></div>
         </div>
       </div>
     </div>

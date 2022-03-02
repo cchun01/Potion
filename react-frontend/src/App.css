@@ -8,16 +8,16 @@
 
 .nav-bar {
   align-items: flex-end;
-  background-color: var(--white);
+  background-color: rgb(255, 255, 255);
   display: flex;
   height: 109px;
   left: 0;
-  min-width: 1440px;
   padding: 0 81px;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  width: 50%;
 }
 
+/* Rainbow potion icon */
 .image-1-1 {
   align-self: center;
   cursor: pointer;
@@ -42,7 +42,7 @@
   min-width: 70px;
   color: var(--envy);
   font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-m);
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
 }
@@ -55,9 +55,10 @@
   min-width: 95px;
   color: var(--black);
   font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-m);
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  color: rgb(0, 0, 0);
 }
 
 .help {
@@ -67,9 +68,10 @@
   min-height: 48px;
   color: var(--black);
   font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-m);
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  color: rgb(0, 0, 0);
 }
 
 .text-1 {
@@ -87,9 +89,10 @@
   min-width: 63px;
   color: var(--black);
   font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-m);
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  color: rgb(0, 0, 0);
 }
 
 .try-potion-free {
@@ -99,23 +102,26 @@
   min-height: 24px;
   color: var(--black);
   font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-m);
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  color: rgb(0, 0, 0);
 }
 
+/* Vertical line between login and try potion free */
 .line-1 {
   height: 36px;
   left: 1126px;
-  position: absolute;
+  position: fixed;
   top: 56px;
   width: 1px;
 }
 
+/* Top horizontal line */
 .line-2 {
   height: 1px;
   left: 81px;
-  position: absolute;
+  position: fixed;
   top: 104px;
   width: 1239px;
 }
