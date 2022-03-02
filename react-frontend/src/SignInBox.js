@@ -1,7 +1,7 @@
 import React from "react";
 import Text222 from "./Text222";
 import Text3 from "./Text3";
-import  "./ShowPassword";
+import "./ShowPassword";
 import "./SignInBox.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -25,20 +25,29 @@ function SignInBox() {
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
-  }
-  
+  };
+
   return (
     <div className="sign-in-box">
       <Text222 />
-      <div 
-      className="emailLogIn">{""}
-      </div>
-      <input type="text" className="overlap-group1" placeholder="Email Address" />
+      <div className="emailLogIn">{""}</div>
+      <input
+        type="text"
+        className="overlap-group1"
+        placeholder="Email Address"
+      />
       <div className="passwordLogIn">{""}</div>
-      <input type={passwordShown ? "text" : "password"}  className="overlap-group3" placeholder="Password"/>
+      <input
+        type={passwordShown ? "text" : "password"}
+        className="overlap-group3"
+        placeholder="Password"
+      />
 
-      < ShowPassword/>
-      <button onClick={togglePassword} className = "show-password"> show </button>
+      <ShowPassword />
+      <button onClick={togglePassword} className="show-password">
+        {" "}
+        show{" "}
+      </button>
 
       <Text3 />
       <button
