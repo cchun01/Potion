@@ -18,6 +18,16 @@ mongoose
   .then(() => console.log("Successfully connected :)"))
   .catch((error) => console.error(`connection error ${error}:(`));
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  res.header("Access-Control-Allow-Methods", "GET,POST,OPTIONS,DELETE,PUT");
+  next();
+});
+
 app.get("/", (req, res) => {
   res.send("Hello world!");
 });
@@ -29,10 +39,10 @@ const UserSchema = new mongoose.Schema(
     email: String,
     password: String,
   },
-  { collection: "Users" }
+  { collection: "Users2" }
 );
 
-const User = mongoose.model("Users", UserSchema);
+const User = mongoose.model("Users2", UserSchema);
 
 // adds new user with information given in request body
 app.post("/api/newUser", async (req, res) => {
@@ -57,12 +67,86 @@ app.get("/api/users", async (req, res) => {
   res.send(await User.find({}));
 });
 
-// returns first user with the first name given
+// returns first user with the firstName given
 app.get("/api/users/:firstName", async (req, res) => {
   const user = await User.findOne({
     firstName: req.params.firstName,
   });
   res.send(user);
 });
+
+const NoteSchema = new mongoose.Schema(
+  {
+    title: String,
+    description: String,
+    myid: Number,
+    emoji: String,
+  },
+  { collection: "Notes2" }
+);
+
+const Note = mongoose.model("Notes2", NoteSchema);
+
+//returns all notes
+app.get("/api/notes", async (req, res) => {
+  res.send(await Note.find({}));
+});
+
+// adds new note with information given in request body
+app.post("/api/newNote", async (req, res) => {
+  const { title, description, myid, emoji } = req.body;
+  let note = new Note({
+    title: title,
+    description: description,
+    myid: myid,
+    emoji: emoji,
+  });
+  try {
+    note = await note.save();
+    res.send(`User named ${title} added to collection`);
+  } catch (error) {
+    res.status(500).send(error.message);
+    console.log(`error is ${error.message}`);
+  }
+});
+
+// returns first note with the title given
+app.get("/api/notes/:title", async (req, res) => {
+  const user = await Note.findOne({
+    title: req.params.title,
+  });
+  res.send(user);
+});
+
+// returns first note with the myid given
+app.get("/api/notesID/:myid", async (req, res) => {
+  const user = await Note.findOne({
+    myid: req.params.myid,
+  });
+  res.send(user);
+});
+
+// returns first note with the myid given
+app.delete("/api/notesID2/:myid", async (req, res) => {
+  const user = await Note.findOneAndRemove({
+    myid: req.params.myid,
+  });
+  res.send(user);
+});
+
+app.delete("/deleteID/:myid", (req, res) => {
+  const myid = req.params.myid;
+  if (myid != undefined) {
+    deleteUser(myid);
+    res.status(204).end();
+  } else {
+    res.status(404).end();
+  }
+});
+
+function deleteUser(myid) {
+  const index = users["users_list"].findIndex((user) => user["id"] === id);
+  users["users_list"].splice(index, 1);
+}
 
 app.listen(3001);

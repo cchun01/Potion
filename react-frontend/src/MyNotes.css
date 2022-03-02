@@ -38,6 +38,7 @@ button {
   min-width: 1205px;
   z-index: 4;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .noteContainer {
