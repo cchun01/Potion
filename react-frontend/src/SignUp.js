@@ -1,37 +1,47 @@
 import React from "react";
 import "./SignUp.css";
+import axios from "axios";
 
-function clicked() {
-  const firstName = document.getElementsByClassName("usernameBox")[0].value;
+async function clicked() {
+  const username = document.getElementsByClassName("usernameBox")[0].value;
   const email = document.getElementsByClassName("emailBox")[0].value;
-  const username = document.getElementsByClassName("passwordBox")[0].value;
-  const password = document.getElementsByClassName("confPasswordBox")[0].value;
-  if (firstName === "") {
-    console.log("No first name provided");
-    document.getElementById("error").innerHTML = "No first name provided";
+  const password = document.getElementsByClassName("passwordBox")[0].value;
+  const confpassword =
+    document.getElementsByClassName("confPasswordBox")[0].value;
+  if (username === "") {
+    console.log("No username provided");
+    document.getElementById("error").innerHTML = "No username provided";
   } else if (email === "") {
     console.log("No email provided");
     document.getElementById("error").innerHTML = "No email provided";
   } else if (!(email.includes("@") && email.includes("."))) {
     console.log("Invalid email provided");
     document.getElementById("error").innerHTML = "Invalid email provided";
-  } else if (username === "") {
-    console.log("No username provided");
-    document.getElementById("error").innerHTML = "No username provided";
   } else if (password === "") {
     console.log("No password provided");
     document.getElementById("error").innerHTML = "No password provided";
+  } else if (confpassword === "") {
+    console.log("No confirmation password provided");
+    document.getElementById("error").innerHTML =
+      "No confirmation password provided";
+  } else if (password !== confpassword) {
+    console.log("Passwords are not the same");
+    document.getElementById("error").innerHTML = "Passwords are not the same";
   } else {
     console.log(
-      "Profile\n\nFirst Name: " +
-        firstName +
-        "\nEmail: " +
+      "Profile\n\nEmail: " +
         email +
         "\nUseranme: " +
         username +
         "\nPassword: " +
         password
     );
+    const person = {
+      username: username,
+      email: email,
+      password: password,
+    };
+    await axios.post("http://localhost:3001/api/newUser", person);
     window.location.href = "my-notes";
   }
 }
