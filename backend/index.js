@@ -66,8 +66,15 @@ app.get("/api/users", async (req, res) => {
 });
 
 // returns first user with the username given
-app.get("/api/users/:username", async (req, res) => {
+app.get("/api/users/:email", async (req, res) => {
   const user = await User.findOne({
+    email: req.params.email,
+  });
+  res.send(user);
+});
+
+app.delete("/api/usersDel/:username", async (req, res) => {
+  const user = await User.findOneAndRemove({
     username: req.params.username,
   });
   res.send(user);
@@ -79,6 +86,7 @@ const NoteSchema = new mongoose.Schema(
     description: String,
     myid: Number,
     emoji: String,
+    username: String,
   },
   { collection: "Notes2" }
 );
@@ -92,12 +100,13 @@ app.get("/api/notes", async (req, res) => {
 
 // adds new note with information given in request body
 app.post("/api/newNote", async (req, res) => {
-  const { title, description, myid, emoji } = req.body;
+  const { title, description, myid, emoji, username } = req.body;
   let note = new Note({
     title: title,
     description: description,
     myid: myid,
     emoji: emoji,
+    username: username,
   });
   try {
     note = await note.save();
@@ -112,6 +121,13 @@ app.post("/api/newNote", async (req, res) => {
 app.get("/api/notes/:title", async (req, res) => {
   const user = await Note.findOne({
     title: req.params.title,
+  });
+  res.send(user);
+});
+
+app.get("/api/notesU/:username", async (req, res) => {
+  const user = await Note.find({
+    username: req.params.username,
   });
   res.send(user);
 });
@@ -132,19 +148,19 @@ app.delete("/api/notesID2/:myid", async (req, res) => {
   res.send(user);
 });
 
-app.delete("/deleteID/:myid", (req, res) => {
-  const myid = req.params.myid;
-  if (myid != undefined) {
-    deleteUser(myid);
-    res.status(204).end();
-  } else {
-    res.status(404).end();
-  }
-});
+// app.delete("/deleteID/:myid", (req, res) => {
+//   const myid = req.params.myid;
+//   if (myid != undefined) {
+//     deleteUser(myid);
+//     res.status(204).end();
+//   } else {
+//     res.status(404).end();
+//   }
+// });
 
-function deleteUser(myid) {
-  const index = users["users_list"].findIndex((user) => user["id"] === id);
-  users["users_list"].splice(index, 1);
-}
+// function deleteUser(myid) {
+//   const index = users["users_list"].findIndex((user) => user["id"] === id);
+//   users["users_list"].splice(index, 1);
+// }
 
 app.listen(3001);
