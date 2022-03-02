@@ -1,18 +1,13 @@
 .text-3 {
-  display: flex;
   height: 24px;
-  margin-left: 3px;
+  margin-left: 59px;
   margin-top: 21px;
-  width: 195px;
 }
 
 .forgot-password {
-  flex: 1;
-  letter-spacing: 0;
-  width: 193px;
   color: var(--black);
   font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-m);
+  font-size: 20px;
   font-style: normal;
   font-weight: 800;
 }

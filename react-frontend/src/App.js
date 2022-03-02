@@ -28,6 +28,7 @@ function MyApp() {
                 src={require("./navbarImages/image-1@2x.png")}
               />
             </Link>
+
             <div className="text">
               <Link to="/" style={linkStyle}>
                 <div className="potion">
