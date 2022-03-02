@@ -1,6 +1,50 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./SignUp.css";
+import axios from "axios";
+
+async function clicked() {
+  const username = document.getElementsByClassName("usernameBox")[0].value;
+  const email = document.getElementsByClassName("emailBox")[0].value;
+  const password = document.getElementsByClassName("passwordBox")[0].value;
+  const confpassword =
+    document.getElementsByClassName("confPasswordBox")[0].value;
+  if (username === "") {
+    console.log("No username provided");
+    document.getElementById("error").innerHTML = "No username provided";
+  } else if (email === "") {
+    console.log("No email provided");
+    document.getElementById("error").innerHTML = "No email provided";
+  } else if (!(email.includes("@") && email.includes("."))) {
+    console.log("Invalid email provided");
+    document.getElementById("error").innerHTML = "Invalid email provided";
+  } else if (password === "") {
+    console.log("No password provided");
+    document.getElementById("error").innerHTML = "No password provided";
+  } else if (confpassword === "") {
+    console.log("No confirmation password provided");
+    document.getElementById("error").innerHTML =
+      "No confirmation password provided";
+  } else if (password !== confpassword) {
+    console.log("Passwords are not the same");
+    document.getElementById("error").innerHTML = "Passwords are not the same";
+  } else {
+    console.log(
+      "Profile\n\nEmail: " +
+        email +
+        "\nUseranme: " +
+        username +
+        "\nPassword: " +
+        password
+    );
+    const person = {
+      username: username,
+      email: email,
+      password: password,
+    };
+    await axios.post("http://localhost:3001/api/newUser", person);
+    window.location.href = "my-notes";
+  }
+}
 
 function TryNotionFree() {
   return (
@@ -14,17 +58,18 @@ function TryNotionFree() {
         <div className="signUpForm">
           <div className="signUpHeader">Sign Up</div>
         </div>
-        <Link to="/my-notes">
-          <div className="submitSign">Sign Up</div>
-        </Link>
+        <div onClick={clicked} className="submitSign">
+          Sign Up
+        </div>
         <div className="username">Username</div>
-        <div className="usernameBox"></div>
+        <input type="text" className="usernameBox"></input>
         <div className="email">Email</div>
-        <div className="emailBox"></div>
+        <input type="text" className="emailBox"></input>
         <div className="password">Password</div>
-        <div className="passwordBox"></div>
+        <input type="text" className="passwordBox"></input>
         <div className="confirm-password">Confirm Password</div>
-        <div className="confPasswordBox"></div>
+        <input type="text" className="confPasswordBox"></input>
+        <p className="errorMessage" id="error"></p>
       </div>
     </div>
   );

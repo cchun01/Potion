@@ -18,34 +18,42 @@ mongoose
   .then(() => console.log("Successfully connected :)"))
   .catch((error) => console.error(`connection error ${error}:(`));
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  res.header("Access-Control-Allow-Methods", "GET,POST,OPTIONS,DELETE,PUT");
+  next();
+});
+
 app.get("/", (req, res) => {
   res.send("Hello world!");
 });
 
 const UserSchema = new mongoose.Schema(
   {
-    firstName: String,
     username: String,
     email: String,
     password: String,
   },
-  { collection: "Users" }
+  { collection: "Users2" }
 );
 
-const User = mongoose.model("Users", UserSchema);
+const User = mongoose.model("Users2", UserSchema);
 
 // adds new user with information given in request body
 app.post("/api/newUser", async (req, res) => {
-  const { firstName, username, email, password } = req.body;
+  const { username, email, password } = req.body;
   let person = new User({
-    firstName: firstName,
     username: username,
     email: email,
     password: password,
   });
   try {
     person = await person.save();
-    res.send(`User named ${firstName} added to collection`);
+    res.send(`${username} added to collection`);
   } catch (error) {
     res.status(500).send(error.message);
     console.log(`error is ${error.message}`);
@@ -57,12 +65,86 @@ app.get("/api/users", async (req, res) => {
   res.send(await User.find({}));
 });
 
-// returns first user with the first name given
-app.get("/api/users/:firstName", async (req, res) => {
+// returns first user with the username given
+app.get("/api/users/:username", async (req, res) => {
   const user = await User.findOne({
-    firstName: req.params.firstName,
+    username: req.params.username,
   });
   res.send(user);
 });
+
+const NoteSchema = new mongoose.Schema(
+  {
+    title: String,
+    description: String,
+    myid: Number,
+    emoji: String,
+  },
+  { collection: "Notes2" }
+);
+
+const Note = mongoose.model("Notes2", NoteSchema);
+
+//returns all notes
+app.get("/api/notes", async (req, res) => {
+  res.send(await Note.find({}));
+});
+
+// adds new note with information given in request body
+app.post("/api/newNote", async (req, res) => {
+  const { title, description, myid, emoji } = req.body;
+  let note = new Note({
+    title: title,
+    description: description,
+    myid: myid,
+    emoji: emoji,
+  });
+  try {
+    note = await note.save();
+    res.send(`User named ${title} added to collection`);
+  } catch (error) {
+    res.status(500).send(error.message);
+    console.log(`error is ${error.message}`);
+  }
+});
+
+// returns first note with the title given
+app.get("/api/notes/:title", async (req, res) => {
+  const user = await Note.findOne({
+    title: req.params.title,
+  });
+  res.send(user);
+});
+
+// returns first note with the myid given
+app.get("/api/notesID/:myid", async (req, res) => {
+  const user = await Note.findOne({
+    myid: req.params.myid,
+  });
+  res.send(user);
+});
+
+// returns first note with the myid given
+app.delete("/api/notesID2/:myid", async (req, res) => {
+  const user = await Note.findOneAndRemove({
+    myid: req.params.myid,
+  });
+  res.send(user);
+});
+
+app.delete("/deleteID/:myid", (req, res) => {
+  const myid = req.params.myid;
+  if (myid != undefined) {
+    deleteUser(myid);
+    res.status(204).end();
+  } else {
+    res.status(404).end();
+  }
+});
+
+function deleteUser(myid) {
+  const index = users["users_list"].findIndex((user) => user["id"] === id);
+  users["users_list"].splice(index, 1);
+}
 
 app.listen(3001);
