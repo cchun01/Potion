@@ -5,6 +5,7 @@ import EmailVerification from "./EmailVerification";
 import MyNotes from "./MyNotes";
 import LogIn from "./LogIn";
 import Home from "./Home";
+import Help from "./Help";
 import NewNote from "./NewNote";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -65,6 +66,7 @@ function MyApp() {
       <Routes>
         <Route path="/try-notion-free" element={<SignUp />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/help" element={<Help />} />
         <Route path="/emailverification" element={<EmailVerification />} />
         <Route path="/my-notes" element={<MyNotes />} />
         <Route path="/log-in" element={<LogIn />} />
