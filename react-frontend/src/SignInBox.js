@@ -14,7 +14,8 @@ async function clicked() {
   const password = document.getElementsByClassName("overlap-group3")[0].value;
   if (email === "" && password === "") {
     console.log("No email or password provided.");
-    document.getElementById("error").innerHTML = "No email or password provided.";
+    document.getElementById("error").innerHTML =
+      "No email or password provided.";
   } else if (password === "") {
     console.log("No password provided.");
     document.getElementById("error").innerHTML = "No password provided.";
