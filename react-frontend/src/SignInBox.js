@@ -14,10 +14,13 @@ async function clicked() {
   const password = document.getElementsByClassName("overlap-group3")[0].value;
   if (email === "" && password === "") {
     console.log("No email or password provided.");
+    document.getElementById("error").innerHTML = "No email or password provided.";
   } else if (password === "") {
     console.log("No password provided.");
+    document.getElementById("error").innerHTML = "No password provided.";
   } else if (email === "") {
     console.log("No email provided.");
+    document.getElementById("error").innerHTML = "No email provided.";
   } else {
     const user = await axios.get(`http://localhost:3001/api/users/${email}`);
     if (user.data.password === password) {
@@ -25,6 +28,7 @@ async function clicked() {
       window.location.href = "my-notes";
     } else {
       console.log("Password in backend doesn't match");
+      document.getElementById("error").innerHTML = "Invalid email or password.";
     }
   }
 }
@@ -89,6 +93,7 @@ function SignInBox() {
       >
         Sign Up
       </button>
+      <p className="errorMessage" id="error"></p>
     </div>
   );
 }
