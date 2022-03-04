@@ -65,7 +65,7 @@ app.get("/api/users", async (req, res) => {
   res.send(await User.find({}));
 });
 
-// returns first user with the username given
+// returns first user with the email given
 app.get("/api/users/:email", async (req, res) => {
   const user = await User.findOne({
     email: req.params.email,
@@ -98,23 +98,16 @@ app.get("/api/notes", async (req, res) => {
   res.send(await Note.find({}));
 });
 
-// adds new note with information given in request body
-app.post("/api/newNote", async (req, res) => {
-  const { title, description, myid, emoji, username } = req.body;
-  let note = new Note({
-    title: title,
-    description: description,
-    myid: myid,
-    emoji: emoji,
-    username: username,
-  });
-  try {
-    note = await note.save();
-    res.send(`User named ${title} added to collection`);
-  } catch (error) {
-    res.status(500).send(error.message);
-    console.log(`error is ${error.message}`);
+//returns all notes
+app.get("/api/notesMax", async (req, res) => {
+  const notes = await Note.find({});
+  let max = 0;
+  for (const n of notes) {
+    if (max < n.myid) {
+      max = n.myid;
+    }
   }
+  res.send({ max: max });
 });
 
 // returns first note with the title given
@@ -140,6 +133,25 @@ app.get("/api/notesID/:myid", async (req, res) => {
   res.send(user);
 });
 
+// adds new note with information given in request body
+app.post("/api/newNote", async (req, res) => {
+  const { title, description, myid, emoji, username } = req.body;
+  let note = new Note({
+    title: title,
+    description: description,
+    myid: myid,
+    emoji: emoji,
+    username: username,
+  });
+  try {
+    note = await note.save();
+    res.send(`User named ${title} added to collection`);
+  } catch (error) {
+    res.status(500).send(error.message);
+    console.log(`error is ${error.message}`);
+  }
+});
+
 // returns first note with the myid given
 app.delete("/api/notesID2/:myid", async (req, res) => {
   const user = await Note.findOneAndRemove({
@@ -147,20 +159,5 @@ app.delete("/api/notesID2/:myid", async (req, res) => {
   });
   res.send(user);
 });
-
-// app.delete("/deleteID/:myid", (req, res) => {
-//   const myid = req.params.myid;
-//   if (myid != undefined) {
-//     deleteUser(myid);
-//     res.status(204).end();
-//   } else {
-//     res.status(404).end();
-//   }
-// });
-
-// function deleteUser(myid) {
-//   const index = users["users_list"].findIndex((user) => user["id"] === id);
-//   users["users_list"].splice(index, 1);
-// }
 
 app.listen(3001);
