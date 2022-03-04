@@ -1,6 +1,12 @@
 import "./MyNotes.css";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+function clicked(myid) {
+  axios.delete(`http://localhost:3001/api/notesID2/${myid}`);
+  window.location.href = "my-notes";
+}
 
 function MyNotes() {
   let [allNotes, setNote] = useState();
@@ -29,6 +35,14 @@ function MyNotes() {
                   className="noteTitle"
                 >
                   {note.title}
+                </button>
+                <button
+                  onClick={() => {
+                    clicked(note.myid);
+                  }}
+                  className="close"
+                >
+                  x
                 </button>
                 <div className="noteEmoji"> {note.emoji} </div>
               </div>

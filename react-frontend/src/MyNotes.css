@@ -47,6 +47,7 @@ button {
   height: 200px;
   margin-left: 87px;
   min-width: 234px;
+  padding-bottom: 30px;
 }
 
 .noteBoxStyle {
@@ -81,4 +82,19 @@ button {
   padding-top: 25px;
   text-align: center;
   font-size: 72px;
+}
+
+.close {
+  color: black;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  background: gray;
+  margin-top: -50px;
+  margin-right: -200px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
