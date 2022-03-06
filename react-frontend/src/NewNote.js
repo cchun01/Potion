@@ -26,8 +26,6 @@ async function update(noteid) {
   };
   await axios.delete("http://localhost:3001/api/notesID2/" + noteid);
   await axios.post("http://localhost:3001/api/newNote", update);
-  // await axios.put("http://localhost:3001/api/notes/" + noteid, title);
-  // await axios.put("http://localhost:3001/api/notes/" + noteid, description);
 }
 
 // clicked for NEW SAVE and click for UPDATE
@@ -47,7 +45,6 @@ async function clicked() {
   emoji = emoji[0];
   console.log(emoji);
   const username = "username";
-  //const username = currentUser;
   console.log(username);
   const note = {
     title: title,
@@ -80,7 +77,11 @@ export default function NewNote({ myid }) {
       >
         My Notes
       </button>
-      <button onClick={() => update(myid)} className="saveButton">
+      <button
+        onClick={() => update(myid)}
+        className="updateButton"
+        disabled={myid === 0}
+      >
         Update
       </button>
       {myid === 0 ? (
