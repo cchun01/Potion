@@ -7,6 +7,9 @@ Instructions for running backend!
     * this should say "Successfully connected :)"
 * then go to http://localhost:3001/ and you should see "Hello world!"
 
+### Testing
+* run `npm test` and it will run all api tests as well as code coverage (will be ~90% since some lines are unreachable)
+
 Go to https://cloud.mongodb.com/v2/619ae185fa35112380cf7d59#metrics/replicaSet/620e8b0e419c9222030d7270/explorer/Potion/Users/find and use the credentials in the env file to see the data base!
 
 
