@@ -99,3 +99,25 @@ it("add and delete a note", async () => {
   const response5 = await request(baseUrl).get("/api/notes");
   expect(response5.body.length).toBe(length);
 });
+
+it("test get max", async () => {
+  const response = await request(baseUrl).get("/api/notesMax");
+  const myid1 = response.body.max;
+  const note = {
+    title: "test123",
+    description: "test456",
+    myid: myid1 + 1,
+    emoji: "emoj",
+    username: "lala",
+  };
+
+  await request(baseUrl).post("/api/newNote").send(note);
+
+  const response2 = await request(baseUrl).get("/api/notesMax");
+  expect(response2.body.max).toBe(myid1 + 1);
+
+  await request(baseUrl).delete(`/api/notesID2/${myid1 + 1}`);
+
+  const response5 = await request(baseUrl).get("/api/notesMax");
+  expect(response5.body.max).toBe(myid1);
+});
