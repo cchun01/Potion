@@ -1,6 +1,7 @@
 import React from "react";
 import "./SignUp.css";
 import axios from "axios";
+//var currentUser;
 
 async function clicked() {
   const username = document.getElementsByClassName("usernameBox")[0].value;
@@ -36,6 +37,7 @@ async function clicked() {
         "\nPassword: " +
         password
     );
+    //currentUser = username;
     const person = {
       username: username,
       email: email,

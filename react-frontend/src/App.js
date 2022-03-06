@@ -75,6 +75,13 @@ function MyApp() {
         <Route path="/new-note1" element={<NewNote myid={1} />} />
         <Route path="/new-note2" element={<NewNote myid={2} />} />
         <Route path="/new-note3" element={<NewNote myid={3} />} />
+        <Route path="/new-note4" element={<NewNote myid={4} />} />
+        <Route path="/new-note5" element={<NewNote myid={5} />} />
+        <Route path="/new-note6" element={<NewNote myid={6} />} />
+        <Route path="/new-note7" element={<NewNote myid={7} />} />
+        <Route path="/new-note8" element={<NewNote myid={8} />} />
+        <Route path="/new-note9" element={<NewNote myid={9} />} />
+        <Route path="/new-note10" element={<NewNote myid={10} />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
