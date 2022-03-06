@@ -34,7 +34,8 @@ button {
   align-items: flex-start;
   display: flex;
   margin-left: 45px;
-  margin-top: 93px;
+  margin-top: 43px;
+  margin-bottom: 50px;
   min-width: 1205px;
   z-index: 4;
   position: relative;
@@ -47,7 +48,7 @@ button {
   height: 200px;
   margin-left: 87px;
   min-width: 234px;
-  padding-bottom: 30px;
+  margin-top: 50px;
 }
 
 .noteBoxStyle {

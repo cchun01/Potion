@@ -65,6 +65,18 @@ app.get("/api/users", async (req, res) => {
   res.send(await User.find({}));
 });
 
+//returns all notes
+app.get("/api/notesMax", async (req, res) => {
+  const notes = await Note.find({});
+  let max = 0;
+  for (const n of notes) {
+    if (max < n.myid) {
+      max = n.myid;
+    }
+  }
+  res.send({ max: max });
+});
+
 // returns first user with the email given
 app.get("/api/users/:email", async (req, res) => {
   const user = await User.findOne({
