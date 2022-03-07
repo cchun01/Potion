@@ -1,18 +1,19 @@
 .try-notion {
-  position: absolute;
+  position: relative;
   height: 70px;
   width: 250px;
-  font-size: 23px;
-  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 700;
   font-family: var(--font-family-montserrat);
-  font-style: normal;
-  margin-left: 280px;
-  margin-top: 180px;
+  margin-left: -460px;
+  margin-top: 160px;
+  color: rgb(255, 255, 255);
+  text-align: center;
 
   background-color: rgb(231, 64, 67);
-
   box-sizing: border-box;
   border: 1px solid rgb(145, 44, 46);
   border-radius: 8px;
   white-space: nowrap; /* keeps text on one line */
+  line-height : 60px;
 }
