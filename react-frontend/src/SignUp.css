@@ -1,15 +1,17 @@
 /* Sign up button */
 .submitSign {
   position: relative;
-  width: 243px;
-  height: 64px;
+  width: 252px;
+  height: 55px;
   left: 40%;
-  top: 65%;
+  top: 66%;
 
   background: #ffffff;
   font-family: var(--font-family-montserrat);
+  color: var(--white);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   color: rgb(0, 0, 0);
   text-align: center;
   box-sizing: border-box;
@@ -50,23 +52,33 @@
 
 /* Pen drawing */
 .outlineImage {
-  height: 382px;
-  left: 674px;
-  object-fit: cover;
+  height: 380px;
+  left: 810px;
   position: absolute;
-  top: 567px;
+  top: 595px;
   width: 700px;
+  object-fit: scale-down;
+  image-rendering: -webkit-optimize-contrast;
 }
+
+/* Pumkin
+.image-7 {
+  height: 380px;
+  left: 850px;
+  object-fit: scale-down;
+  position: absolute;
+  top: 552px;
+  width: 500px;
+} */
 
 .usernameBox {
   background-color: var(--white);
   border-radius: 7px;
   height: 55px;
-  margin-left: 399px;
+  margin-left: 440px;
   position: absolute;
   top: 189px;
-  width: 432px;
-  border: 1px solid black;
+  width: 472px;
   padding-left: 20px;
 }
 
@@ -74,11 +86,10 @@
   background-color: var(--white);
   border-radius: 7px;
   height: 55px;
-  left: 399px;
+  left: 440px;
   position: absolute;
   top: 296px;
-  width: 432px;
-  border: 1px solid black;
+  width: 472px;
   padding-left: 20px;
 }
 
@@ -86,11 +97,10 @@
   background-color: var(--white);
   border-radius: 7px;
   height: 55px;
-  left: 399px;
+  left: 440px;
   position: absolute;
   top: 403px;
-  width: 432px;
-  border: 1px solid black;
+  width: 472px;
   padding-left: 20px;
 }
 
@@ -98,52 +108,66 @@
   background-color: var(--white);
   border-radius: 7px;
   height: 55px;
-  left: 399px;
+  left: 440px;
   position: absolute;
   top: 510px;
-  width: 432px;
-  border: 1px solid black;
+  width: 472px;
   padding-left: 20px;
 }
 
+/* Password box
+.overlap-group3 {
+  align-self: center;
+  background-size: 100% 100%;
+  display: flex;
+  height: 55px;
+  margin-left: 3px;
+  margin-top: 29px;
+  min-width: 472px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 18px;
+} */
+
 .username {
-  left: 399px;
+  left: 440px;
   letter-spacing: 0;
   position: absolute;
-  top: 158px;
+  top: 161px;
   font-family: var(--font-family-montserrat);
-  font-size: large;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 800px;
 }
 
 .email {
-  left: 399px;
+  left: 440px;
   letter-spacing: 0;
   position: absolute;
-  top: 265px;
+  top: 267px;
   font-family: var(--font-family-montserrat);
-  font-size: large;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 800px;
 }
 
 .password {
-  left: 399px;
+  left: 440px;
   letter-spacing: 0;
   position: absolute;
-  top: 372px;
+  top: 375px;
   font-family: var(--font-family-montserrat);
-  font-size: large;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 800px;
 }
 
 .confirm-password {
-  left: 396px;
+  left: 440px;
   letter-spacing: 0;
   position: absolute;
-  top: 479px;
+  top: 481px;
   font-family: var(--font-family-montserrat);
-  font-size: large;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 800px;
 }
 
 .signUpForm {
@@ -154,7 +178,7 @@
   display: flex;
   flex-direction: column;
   left: 326px;
-  min-height: 750px;
+  min-height: 635px;
   padding: 75.6px 70px;
   position: absolute;
   top: 0;
@@ -163,7 +187,6 @@
 
 .signUpHeader {
   height: 61px;
-  width: 185px;
   letter-spacing: 0;
   width: 207px;
   font-size: 50px;
@@ -171,4 +194,5 @@
   font-family: var(--font-family-montserrat);
   font-style: normal;
   color: var(--black);
+  margin-left: 40px;
 }

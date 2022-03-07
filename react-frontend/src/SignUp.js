@@ -68,9 +68,9 @@ function TryNotionFree() {
         <div className="email">Email</div>
         <input type="text" className="emailBox"></input>
         <div className="password">Password</div>
-        <input type="text" className="passwordBox"></input>
+        <input type="password" className="passwordBox"></input>
         <div className="confirm-password">Confirm Password</div>
-        <input type="text" className="confPasswordBox"></input>
+        <input type="password" className="confPasswordBox"></input>
         <p className="errorMessage" id="error"></p>
       </div>
     </div>
