@@ -12,5 +12,19 @@ https://www.figma.com/proto/qqIUoBpYVaosfZcsPngPzK/Potion-V2?node-id=6%3A7&scali
 The Potion team is using the Prettier ESLint extension available in VSCode. (https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint).
 It uses the default Prettier ESLint code style. To install it on your own computer, download the Prettier ESLint extension in VSCode. Set it as the default formatter by opening a js file and pressing  CTRL + SHIFT + P (Windows/Linux) or CMD + SHIFT + P (macOS). Type "Format Document With" and click on "Configure Default Formatter" to change it to "Prettier ESLint."
 
-## Axios
-You will need axios installed on your computer if you download this code and would like to run it. Install axios by typing "npm i axios" in your command line under your project folder.
+## Set up Development
+* in a new folder, run `git clone https://github.com/cchun01/Potion.git`
+* Start the front end
+    * Navigate to the frontend folder (`cd react-frontend`) and run `npm install` to install all of the package dependencies
+    * Next run `npm start` to start up the front end
+    * Note: At this point you should get redirected to http://localhost:3000/ and the main page should open up.
+* Start the back end
+    * Navigate to the backend folder (`cd backend`) and run `npm install` to install all of the package dependencies
+        * Note that to start our backend you will need access to our .env so make sure that is added
+    * Next run `nodemon index.js` to start up the backend
+    * The console should say "Successful Connection :)" if you have the backend set up correctly or go to http://localhost:3001/ and you should see "Hello world!"
+* Once you have both the front end and backend running you should be able to navigate http://localhost:3000/ and make changes to the users and notes
+
+
+## Testing the Backend
+Run `npm test` before pushing any code and it will run all api tests as well as code coverage (will be ~90% since some lines are unreachable)
