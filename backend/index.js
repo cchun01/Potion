@@ -160,11 +160,4 @@ app.delete("/api/notesID2/:myid", async (req, res) => {
   res.send(user);
 });
 
-app.delete("/api/usersDelID/:id", async (req, res) => {
-  const user = await Note.findOneAndRemove({
-    _id: req.params.id,
-  });
-  res.send(user);
-});
-
 app.listen(3001);
