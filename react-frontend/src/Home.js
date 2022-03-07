@@ -1,10 +1,14 @@
 import React from "react";
 import "./Home.css";
 import "./TryNotionButton";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+const linkStyle = {
+  textDecoration: "none",
+  color: "green",
+};
 
 function Home() {
-  let navigate = useNavigate();
   return (
     <div className="container-center-horizontal">
       <div className="home screen">
@@ -41,15 +45,10 @@ function Home() {
             <div className="where-things-get-don">
               {"Where things get done and magic happens."}
             </div>
-            <button
-              onClick={() => {
-                navigate("/try-notion-free");
-              }}
-              className="try-notion"
-            >
-              {" "}
-              Try Potion Free{" "}
-            </button>
+
+            <Link to="/try-notion-free" style={linkStyle}>
+              <div className="try-notion">{"Try Potion Free"}</div>
+            </Link>
           </div>
         </div>
       </div>
