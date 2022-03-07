@@ -10,7 +10,6 @@ const linkStyle = {
 };
 
 function Home() {
-  let navigate = useNavigate();
   return (
     <div className="container-center-horizontal">
       <div className="home screen">
@@ -48,11 +47,9 @@ function Home() {
               {"Where things get done and magic happens."}
             </div>
 
-      
-              <Link to="/try-notion-free" style={linkStyle}>
-                <div className="try-notion">{"Try Potion Free"}</div>
-              </Link>
-
+            <Link to="/try-notion-free" style={linkStyle}>
+              <div className="try-notion">{"Try Potion Free"}</div>
+            </Link>
           </div>
         </div>
       </div>
@@ -79,7 +76,6 @@ function Home() {
         </div>
       </div>
     </div>
-    
   );
 }
 
