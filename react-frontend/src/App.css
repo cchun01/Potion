@@ -25,6 +25,7 @@
   margin-top: 14px;
   object-fit: cover;
   width: 81px;
+  image-rendering: -webkit-optimize-contrast; 
 }
 
 .text {
@@ -40,7 +41,7 @@
   letter-spacing: 0;
   min-height: 24px;
   min-width: 70px;
-  color: var(--envy);
+  color:#96c498;
   font-family: var(--font-family-montserrat);
   font-size: 20px;
   font-style: normal;
