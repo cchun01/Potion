@@ -122,3 +122,12 @@
   border-radius: 20px;
   margin-left: 480px;
 }
+
+.errorMessage {
+  position: absolute;
+  width: 293px;
+  height: 64px;
+  left: 18%;
+  top: 45%;
+  color: red;
+}
