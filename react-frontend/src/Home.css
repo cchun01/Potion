@@ -165,7 +165,11 @@
   width: 230px;
   border-radius: 8px 8px 0px 0px;
 }
-
+.homeEmoji {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 72px;
+}
 /* 
 .line-10 {
   height: 1px;

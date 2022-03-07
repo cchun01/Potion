@@ -58,6 +58,7 @@ function Home() {
           <div className="helpBoxStyle2">
             <div className="helpTitle2">Grocery List</div>
             <div className="subText2"></div>
+            <div className="homeEmoji"> 🍎 </div>
           </div>
         </div>
 
@@ -65,6 +66,7 @@ function Home() {
           <div className="helpBoxStyle2">
             <div className="helpTitle2"> Homework </div>
             <div className="subText2"></div>
+            <div className="homeEmoji"> 📝 </div>
           </div>
         </div>
 
@@ -72,6 +74,7 @@ function Home() {
           <div className="helpBoxStyle2">
             <div className="helpTitle2"> Hikes to Try </div>
             <div className="subText2"></div>
+            <div className="homeEmoji"> ⛰️ </div>
           </div>
         </div>
       </div>
