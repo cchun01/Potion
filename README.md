@@ -1,5 +1,6 @@
 # Potion
-![example workflow](https://github.com/cchun01/Potion/actions/workflows/node.js.yml/badge.svg)
+![example workflow](https://github.com/cchun01/Potion/actions/workflows/frontend.js.yml/badge.svg)
+![example workflow](https://github.com/cchun01/Potion/actions/workflows/backend.js.yml/badge.svg)
 
 ## About Potion
 Potion is a note taking platform aimed to help all types of people be organized and productive. We focused on taking a minialistic approach to allow users to work in a simple, yet aesthetically pleasing environment. Our platform allows users to create new notes, save them, update past notes, and delete notes that are no longer needed. Notes are very open ended, meaning that users can create lists, bullet points, paragraphs, and more. We built this application with the belief that organization and productivity should be easy. Potion is a flexible tool where you can store your notes in a simple way that suites you best. 
