@@ -36,6 +36,6 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "potion307"
+          heroku_app_name: "potion307backend"
           heroku_email: "cchun01@calpoly.edu"
           appdir: "backend"
