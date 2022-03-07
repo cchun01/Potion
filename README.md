@@ -13,7 +13,7 @@ The Potion team is using the Prettier ESLint extension available in VSCode. (htt
 It uses the default Prettier ESLint code style. To install it on your own computer, download the Prettier ESLint extension in VSCode. Set it as the default formatter by opening a js file and pressing  CTRL + SHIFT + P (Windows/Linux) or CMD + SHIFT + P (macOS). Type "Format Document With" and click on "Configure Default Formatter" to change it to "Prettier ESLint."
 
 ## Set up Development
-* in a new folder, run `git clone https://github.com/cchun01/Potion.git`
+* In a new folder, run `git clone https://github.com/cchun01/Potion.git`
 * Start the front end
     * Navigate to the frontend folder (`cd react-frontend`) and run `npm install` to install all of the package dependencies
     * Next run `npm start` to start up the front end
