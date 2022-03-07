@@ -47,8 +47,7 @@ function Home() {
               }}
               className="try-notion"
             >
-              {" "}
-              Try Potion Free{" "}
+              Try Notion Free
             </button>
           </div>
         </div>
