@@ -31,3 +31,7 @@ It uses the default Prettier ESLint code style. To install it on your own comput
 
 ## Testing the Backend
 Run `npm test` before pushing any code and it will run all api tests as well as code coverage (will be ~90% since some lines are unreachable)
+
+## Tests
+<img width="517" alt="test's passing" src="https://user-images.githubusercontent.com/32439851/157118489-44a85280-073c-4c75-a266-4fb2480bb9eb.png">
+We have 92% code coverage on our test in our backend. The 8% that is not covered is cases where the MongoDB connection failed, or where an API post failed. In these cases we print out the error messages, but we are unable to test out the failures.
