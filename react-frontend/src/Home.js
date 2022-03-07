@@ -1,8 +1,10 @@
 import React from "react";
 import "./Home.css";
-import "./TryNotionButton"
+import "./TryNotionButton";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  let navigate = useNavigate();
   return (
     <div className="container-center-horizontal">
       <div className="home screen">
@@ -39,7 +41,12 @@ function Home() {
             <div className="where-things-get-don">
               {"Where things get done and magic happens."}
             </div>
-            <button onClick className="try-notion">
+            <button
+              onClick={() => {
+                navigate("/try-notion-free");
+              }}
+              className="try-notion"
+            >
               {" "}
               Try Potion Free{" "}
             </button>
