@@ -46,25 +46,25 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="helpRow">
-        <div className="helpContainer">
-          <div className="helpBoxStyle">
-            <div className="helpTitle">Grocery List</div>
-            <div className="subText"></div>
+      <div className="helpRow2">
+        <div className="helpContainer2">
+          <div className="helpBoxStyle2">
+            <div className="helpTitle2">Grocery List</div>
+            <div className="subText2"></div>
           </div>
         </div>
 
-        <div className="helpContainer">
-          <div className="helpBoxStyle">
-            <div className="helpTitle"> Homework </div>
-            <div className="subText"></div>
+        <div className="helpContainer2">
+          <div className="helpBoxStyle2">
+            <div className="helpTitle2"> Homework </div>
+            <div className="subText2"></div>
           </div>
         </div>
 
-        <div className="helpContainer">
-          <div className="helpBoxStyle">
-            <div className="helpTitle"> Hikes to Try </div>
-            <div className="subText"></div>
+        <div className="helpContainer2">
+          <div className="helpBoxStyle2">
+            <div className="helpTitle2"> Hikes to Try </div>
+            <div className="subText2"></div>
           </div>
         </div>
       </div>

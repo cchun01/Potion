@@ -120,12 +120,17 @@
   font-size: 20px;
 }
 
-.helpRow {
+.helpRow2 {
+  align-items: flex-start;
+  display: flex;
   margin-left: 45px;
-  margin-top: -480px;
+  margin-top: -493px;
+  min-width: 1205px;
+  z-index: 4;
+  position: relative;
 }
 
-.helpContainer {
+.helpContainer2 {
   align-items: flex-start;
   display: flex;
   height: 200px;
@@ -134,7 +139,7 @@
   min-width: 234px;
 }
 
-.helpBoxStyle {
+.helpBoxStyle2 {
   align-items: center;
   background-color: var(--white);
   border-radius: 8px;
@@ -145,7 +150,8 @@
   width: 230px;
 }
 
-.helpTitle {
+.helpTitle2
+ {
   color: white;
   font-family: var(--font-family-montserrat);
   font-size: var(--font-size-m);
