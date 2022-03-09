@@ -71,7 +71,7 @@ function TryNotionFree() {
         <input type="password" className="passwordBox"></input>
         <div className="confirm-password">Confirm Password</div>
         <input type="password" className="confPasswordBox"></input>
-        <p className="errorMessage" id="error"></p>
+        <p className="errorMessage2" id="error"></p>
       </div>
 
       <img
