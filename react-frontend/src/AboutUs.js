@@ -35,10 +35,30 @@ function AboutUs() {
         src={require("./aboutusImages/plane.png")}
       />
 
+      <img
+        className="bottomLine1"
+        alt=""
+        src={require("./aboutusImages/bLine1.png")}
+      />
+
+      <img
+        className="copyright1"
+        alt=""
+        src={require("./aboutusImages/copyright1.png")}
+      />
+
+      <img
+        className="socialMedia1"
+        alt=""
+        src={require("./aboutusImages/socialMedia1.png")}
+      />
+
+      <div className="address1">{"2022 Potion, Inc"}</div>
+
       <div className="bestPart1">And they want to help you</div>
       <div className="bestPart2">do your best too.</div>
       <div className="description1">
-        We built this application with the belift that organization and
+        We built this application with the belief that organization and
         productivity
       </div>
       <div className="description2">
