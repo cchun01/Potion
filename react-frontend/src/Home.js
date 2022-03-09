@@ -91,7 +91,7 @@ function Home() {
       />
 
       <img
-        className="socialMedia"
+        className="socialMedia4"
         alt=""
         src={require("./homeImages/socialMedia4.png")}
       />
