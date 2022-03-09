@@ -3,47 +3,51 @@ import "./AboutUs.css";
 function AboutUs() {
   return (
     <div>
-      <div className="headerAbout">About Us</div>
-      <div className="pinkblock">
-        Potion is designed and created by four Cal Poly students in CSC 307.
-        Through learning and applying our skills around software engineering, we
-        created a productivity platform focusing on minimalism aimed to help
-        users feel organized.
+      <div className="headerAbout">Meet the crew.</div>
+      <div className="headerBelow">
+        Four people just trying to do their best...
       </div>
-      <div className="yellowblock">
-        Our project is deeply inspired by the Notion app, but we add a unique
-        magical spin. Potion brings simplicity, style, and substance to people.
-        Our service is truly customizable for all users and thrives based on
-        it's versatility. We hope you enjoy Potion as much as we did creating
-        it.
+      <img
+        className="alexaPolariod"
+        alt=""
+        src={require("./aboutusImages/Alexa.png")}
+      />
+      <img
+        className="colinPolariod"
+        alt=""
+        src={require("./aboutusImages/Colin.png")}
+      />
+      <img
+        className="daniPolariod"
+        alt=""
+        src={require("./aboutusImages/Dani.png")}
+      />
+
+      <img
+        className="rachelPolariod"
+        alt=""
+        src={require("./aboutusImages/Rachel.png")}
+      />
+
+      <img
+        className="plane"
+        alt=""
+        src={require("./aboutusImages/plane.png")}
+      />
+
+      <div className="bestPart1">And they want to help you</div>
+      <div className="bestPart2">do your best too.</div>
+      <div className="description1">
+        We built this application with the belift that organization and
+        productivity
       </div>
-      <div className="imagecontainer">
-        <div className="row">
-          <div class="column">
-            <figure>
-              <img alt="rachel" src={require("./rachel.png")} />
-              <figcaption>Rachel</figcaption>
-            </figure>
-          </div>
-          <div class="column">
-            <figure>
-              <img alt="dani" src={require("./dani.JPEG")} />
-              <figcaption>Dani</figcaption>
-            </figure>
-          </div>
-          <div class="column">
-            <figure>
-              <img alt="alexa" src={require("./alexa.JPG")} />
-              <figcaption>Alexa</figcaption>
-            </figure>
-          </div>
-          <div class="column">
-            <figure>
-              <img alt="colin" src={require("./colin.jpeg")} />
-              <figcaption>Colin</figcaption>
-            </figure>
-          </div>
-        </div>
+      <div className="description2">
+        should be easy. Potion is a flexible tool where you can store your notes
+        in
+      </div>
+      <div className="description3">simple way that suites you best.</div>
+      <div className="description4">
+        It's easy to get started, and even easier to use.
       </div>
     </div>
   );
