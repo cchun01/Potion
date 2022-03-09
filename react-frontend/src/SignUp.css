@@ -20,13 +20,15 @@
   line-height: 50px;
 }
 
-.errorMessage {
+.errorMessage2 {
   position: absolute;
   width: 243px;
   height: 64px;
   left: 40%;
-  top: 80%;
+  margin-left: -112px;
+  margin-top: 530px;
   color: red;
+  font-size: 18px;
 }
 
 .bottomLine3 {
@@ -122,6 +124,7 @@
   top: 189px;
   width: 472px;
   padding-left: 20px;
+  font-size: 20px;
 }
 
 .emailBox {
@@ -133,6 +136,7 @@
   top: 296px;
   width: 472px;
   padding-left: 20px;
+  font-size: 20px;
 }
 
 .passwordBox {
@@ -144,6 +148,7 @@
   top: 403px;
   width: 472px;
   padding-left: 20px;
+  font-size: 20px;
 }
 
 .confPasswordBox {
@@ -155,6 +160,7 @@
   top: 510px;
   width: 472px;
   padding-left: 20px;
+  font-size: 20px;
 }
 
 /* Password box
