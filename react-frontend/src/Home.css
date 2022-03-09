@@ -170,6 +170,47 @@
   text-align: center;
   font-size: 72px;
 }
+
+.bottomLine4 {
+  height: 1px;
+  left: 81px;
+  position: absolute;
+  top: 1350px;
+  width: 1239px;
+}
+
+/* Copytight Icon */
+.copyright4 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 22px;
+  margin-top: 238px;
+  margin-left: 100px;
+  position: absolute;
+  width: 22px;
+}
+
+.address4 {
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  margin-top: 236px;
+  margin-left: 133px;
+  font-family: var(--font-family-montserrat);
+}
+
+.socialMedia4 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 41px;
+  margin-left: 1105px;
+  margin-top: 230px;
+  position: absolute;
+  width: 232px;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-border-radius: 0px;
+}
+
 /* 
 .line-10 {
   height: 1px;

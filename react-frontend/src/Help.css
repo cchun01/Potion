@@ -76,3 +76,44 @@
   padding: 10px;
   font-family: var(--font-family-montserrat);
 }
+
+.bottomLine2 {
+  height: 1px;
+  left: 81px;
+  position: absolute;
+  top: 1200px;
+  width: 1239px;
+}
+
+/* Copytight Icon */
+.copyright2 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 22px;
+  margin-top: 640px;
+  margin-left: 100px;
+  position: absolute;
+  width: 22px;
+}
+
+.address2 {
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  margin-top: 638px;
+  margin-left: 133px;
+  font-family: var(--font-family-montserrat);
+}
+
+.socialMedia2 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 41px;
+  margin-left: 1105px;
+  margin-top: 1150px;
+  position: absolute;
+  width: 232px;
+  top: 80px;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-border-radius: 0px;
+}

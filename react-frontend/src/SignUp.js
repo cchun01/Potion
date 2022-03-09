@@ -73,6 +73,26 @@ function TryNotionFree() {
         <input type="password" className="confPasswordBox"></input>
         <p className="errorMessage" id="error"></p>
       </div>
+
+      <img
+        className="bottomLine3"
+        alt=""
+        src={require("./signupImages/bLine3.png")}
+      />
+
+      <img
+        className="copyright3"
+        alt=""
+        src={require("./signupImages/copyright3.png")}
+      />
+
+      <img
+        className="socialMedia3"
+        alt=""
+        src={require("./signupImages/socialMedia3.png")}
+      />
+
+      <div className="address3">{"2022 Potion, Inc"}</div>
     </div>
   );
 }

@@ -77,6 +77,26 @@ function Home() {
           </div>
         </div>
       </div>
+
+      <img
+        className="bottomLine4"
+        alt=""
+        src={require("./homeImages/bLine4.png")}
+      />
+
+      <img
+        className="copyright4"
+        alt=""
+        src={require("./homeImages/copyright4.png")}
+      />
+
+      <img
+        className="socialMedia"
+        alt=""
+        src={require("./homeImages/socialMedia4.png")}
+      />
+
+      <div className="address4">{"2022 Potion, Inc"}</div>
     </div>
   );
 }

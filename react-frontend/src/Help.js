@@ -35,6 +35,26 @@ function Help() {
           </div>
         </div>
       </div>
+
+      <img
+        className="bottomLine2"
+        alt=""
+        src={require("./helpImages/bLine2.png")}
+      />
+
+      <img
+        className="copyright2"
+        alt=""
+        src={require("./helpImages/copyright2.png")}
+      />
+
+      <img
+        className="socialMedia2"
+        alt=""
+        src={require("./helpImages/socialMedia2.png")}
+      />
+
+      <div className="address2">{"2022 Potion, Inc"}</div>
     </div>
   );
 }

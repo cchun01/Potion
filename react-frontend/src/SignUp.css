@@ -29,6 +29,47 @@
   color: red;
 }
 
+.bottomLine3 {
+  height: 1px;
+  left: 81px;
+  position: absolute;
+  top: 1178px;
+  width: 1239px;
+}
+
+/* Copytight Icon */
+.copyright3 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 22px;
+  margin-top: 47px;
+  margin-left: 100px;
+  position: absolute;
+  width: 22px;
+}
+
+.address3 {
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  margin-top: 47px;
+  margin-left: 133px;
+  font-family: var(--font-family-montserrat);
+}
+
+.socialMedia3 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 41px;
+  margin-left: 1105px;
+  margin-top: 1135px;
+  position: absolute;
+  width: 232px;
+  top: 80px;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-border-radius: 0px;
+}
+
 /* .div1 {
   display: flex;
   flex-direction: row;
@@ -56,7 +97,7 @@
   height: 380px;
   left: 810px;
   position: absolute;
-  top: 595px;
+  top: 600px;
   width: 700px;
   object-fit: scale-down;
   image-rendering: -webkit-optimize-contrast;

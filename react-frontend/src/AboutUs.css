@@ -162,6 +162,48 @@
   -webkit-border-radius: 0px;
 }
 
+.bottomLine1 {
+  height: 1px;
+  left: 81px;
+  position: absolute;
+  top: 1990px;
+  width: 1239px;
+}
+
+/* Copytight Icon */
+.copyright1 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 22px;
+  margin-top: 1920px;
+  margin-left: -1120px;
+  position: absolute;
+  width: 22px;
+}
+
+.address1 {
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  margin-top: 1177px;
+  margin-left: 135px;
+  font-family: var(--font-family-montserrat);
+}
+
+.socialMedia1 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 41px;
+  margin-left: -110px;
+  margin-top: 1945px;
+  position: absolute;
+  width: 232px;
+  top: 80px;
+
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-border-radius: 0px;
+}
+
 /* affects potion image on main? */
 img {
   width: 150px;
