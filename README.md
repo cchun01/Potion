@@ -1,6 +1,4 @@
 # Potion
-![example workflow](https://github.com/cchun01/Potion/actions/workflows/frontend.js.yml/badge.svg)
-![example workflow](https://github.com/cchun01/Potion/actions/workflows/backend.js.yml/badge.svg)
 
 ## Check out Potion!
 https://potion307.herokuapp.com/
